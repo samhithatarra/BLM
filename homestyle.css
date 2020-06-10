@@ -1,0 +1,757 @@
+@font-face {
+    font-family: 'cornerstoneregular';
+    src: url('webfontkit-20200609-184935/cornerstone-webfont.woff2') format('woff2'),
+         url('webfontkit-20200609-184935/cornerstone-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.mediaViewInfo {
+	--web-view-name: home – 1;
+	--web-view-id: home__1;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: home__1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#home__1 {
+	position: absolute;
+	width: 1920px;
+	height: 6480px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: home – 1;
+	--web-view-id: home__1;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#ID1W4A9448-1200x800 {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Rectangle_2 {
+	opacity: 0.66;
+	fill: rgba(0,0,0,1);
+}
+.Rectangle_2 {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+}
+#FILTERBLACK {
+	left: 833px;
+	top: 32px;
+	position: fixed;
+	overflow: visible;
+	width: 256px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 45px;
+	color: rgba(255,255,255,1);
+}
+#Contact {
+	left: 59px;
+	top: 951px;
+	position: absolute;
+	overflow: visible;
+	width: 303px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 75px;
+	color: rgba(242,203,5,1);
+}
+#About {
+	left: 1643px;
+	top: 951px;
+	position: absolute;
+	overflow: visible;
+	width: 217px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 75px;
+	color: rgba(242,203,5,1);
+}
+#Group_4 {
+	position: absolute;
+	width: 163.5px;
+	height: 55px;
+	left: 557px;
+	top: 965px;
+	overflow: visible;
+}
+#Next {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 120px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(242,78,41,1);
+}
+#Group_3 {
+	position: absolute;
+	width: 24.001px;
+	height: 41px;
+	left: 139.5px;
+	top: 5px;
+	overflow: visible;
+}
+#Union_1 {
+	fill: rgba(0,0,0,0);
+	stroke: rgba(242,78,41,1);
+	stroke-width: 6px;
+	stroke-linejoin: round;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Union_1 {
+	overflow: visible;
+	position: absolute;
+	width: 28.054px;
+	height: 43.211px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Home_Fashion_Food_Tech_Accesso {
+	left: -53px;
+	top: 273px;
+	position: absolute;
+	overflow: visible;
+	width: 373px;
+	height: 535px;
+	line-height: 80px;
+	margin-top: -25px;
+	text-align: right;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(242,78,41,1);
+}
+#We_empower_persons_of_color_by {
+	left: 557px;
+	top: 349px;
+	position: absolute;
+	overflow: visible;
+	width: 1206px;
+	height: 383px;
+	line-height: 120px;
+	margin-top: -26px;
+	text-align: left;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 68px;
+	color: rgba(255,255,255,1);
+}
+#Line_12 {
+	fill: transparent;
+	stroke: rgba(242,78,41,1);
+	stroke-width: 4px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_12 {
+	overflow: visible;
+	position: absolute;
+	width: 5.007px;
+	height: 539.008px;
+	left: 361.5px;
+	top: 260.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Line_13 {
+	fill: transparent;
+	stroke: rgba(242,78,41,1);
+	stroke-width: 3px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_13 {
+	overflow: visible;
+	position: absolute;
+	width: 76px;
+	height: 3px;
+	left: 240.5px;
+	top: 307.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_7 {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 1080px;
+	overflow: visible;
+}
+#Rectangle_3 {
+	fill: rgba(242,203,5,1);
+}
+.Rectangle_3 {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+}
+#Group_5 {
+	position: absolute;
+	width: 1232px;
+	height: 211px;
+	left: 557.5px;
+	top: 390.5px;
+	overflow: visible;
+}
+#SHOP_FASHION a{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1227px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 185px;
+	color: rgba(20,133,179,1);
+	text-decoration: none;
+
+}
+#SHOP_FASHION_ a{
+	left: 6px;
+	top: 6px;
+	position: absolute;
+	overflow: visible;
+	width: 1227px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 185px;
+	color: rgba(28,191,255,1);
+	text-decoration: none;
+	
+}
+#SHOP_FASHION_ a:hover{
+	color: black;
+}
+#Group_6 {
+	position: absolute;
+	width: 1205px;
+	height: 46px;
+	left: 557px;
+	top: 602px;
+	overflow: visible;
+}
+#Explore_fashion_made_by_black_ {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1206px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 42px;
+	color: rgba(0,0,0,1);
+}
+#Line_14 {
+	fill: transparent;
+	stroke: rgba(28,191,255,1);
+	stroke-width: 6px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_14 {
+	overflow: visible;
+	position: absolute;
+	width: 1211px;
+	height: 6px;
+	left: 557.5px;
+	top: 571.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_9 {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 2160px;
+	overflow: visible;
+}
+#Group_7_ {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Rectangle_3_ {
+	fill: rgba(242,78,41,1);
+}
+.Rectangle_3_ {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+}
+#Group_5_ba {
+	position: absolute;
+	width: 906px;
+	height: 211px;
+	left: 554.5px;
+	top: 390.5px;
+	overflow: visible;
+}
+#Find_food a{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 901px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 185px;
+	color: rgba(168,141,3,1);
+	text-decoration: none;
+}
+#Find_food_bc a{
+	left: 6px;
+	top: 6px;
+	position: absolute;
+	overflow: visible;
+	width: 901px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 185px;
+	color: rgba(242,203,5,1);
+	text-decoration: none;
+}
+
+#Find_food_bc a:hover{
+	color: black;
+}
+#Group_6_bd {
+	position: absolute;
+	width: 1086px;
+	height: 92px;
+	left: 557px;
+	top: 602px;
+	overflow: visible;
+}
+#Discover_a_variety_of_black_ow {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1087px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 42px;
+	color: rgba(255,255,255,1);
+}
+#Line_14_bf {
+	fill: transparent;
+	stroke: rgba(242,203,5,1);
+	stroke-width: 6px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_14_bf {
+	overflow: visible;
+	position: absolute;
+	width: 909px;
+	height: 6px;
+	left: 557.5px;
+	top: 571.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_9_bg {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 3240px;
+	overflow: visible;
+}
+#Group_7_bh {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Rectangle_3_bi {
+	fill: rgba(28,191,255,1);
+}
+.Rectangle_3_bi {
+	position: absolute;
+	overflow: visible;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+}
+#Group_5_bj {
+	position: absolute;
+	width: 1270px;
+	height: 199px;
+	left: 554.5px;
+	top: 390.5px;
+	overflow: visible;
+}
+#Discover_tech a{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1265px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 174px;
+	color: rgba(179,58,30,1);
+	text-decoration: none;
+}
+#Discover_tech_bl a{
+	left: 6px;
+	top: 6px;
+	position: absolute;
+	overflow: visible;
+	width: 1265px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 174px;
+	color: rgba(242,78,41,1);
+	text-decoration: none;
+}
+
+#Discover_tech_bl a:hover {
+	color: black;
+}
+
+#Group_6_bm {
+	position: absolute;
+	width: 1107px;
+	height: 92px;
+	left: 557px;
+	top: 602px;
+	overflow: visible;
+}
+#See_what_Black_innovators_are_ {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1108px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 42px;
+	color: rgba(0,0,0,1);
+}
+#Line_14_bo {
+	fill: transparent;
+	stroke: rgba(242,78,41,1);
+	stroke-width: 6px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_14_bo {
+	overflow: visible;
+	position: absolute;
+	width: 1259px;
+	height: 6px;
+	left: 557.5px;
+	top: 571.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_10 {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 4320px;
+	overflow: visible;
+}
+#Group_7_bq {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Path_1 {
+	fill: rgba(0,0,0,1);
+}
+.Path_1 {
+	overflow: visible;
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_5_bs {
+	position: absolute;
+	width: 1120px;
+	height: 199px;
+	left: 558.5px;
+	top: 390.5px;
+	overflow: visible;
+}
+#SHOP_BEAUTY a{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1115px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 174px;
+	color: rgba(171,143,3,1);
+	text-decoration: none;
+}
+#SHOP_BEAUTY_bu a{
+	left: 6px;
+	top: 6px;
+	position: absolute;
+	overflow: visible;
+	width: 1115px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 174px;
+	color: rgba(242,203,5,1);
+	text-decoration: none;
+}
+
+#SHOP_BEAUTY_bu a:hover {
+	color: skyblue;
+}
+#Group_6_bv {
+	position: absolute;
+	width: 1189px;
+	height: 92px;
+	left: 557px;
+	top: 602px;
+	overflow: visible;
+}
+#Look_for_black_owned_beauty_co {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1190px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 42px;
+	color: rgba(255,255,255,1);
+}
+#Line_14_bx {
+	fill: transparent;
+	stroke: rgba(242,203,5,1);
+	stroke-width: 6px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_14_bx {
+	overflow: visible;
+	position: absolute;
+	width: 1114px;
+	height: 6px;
+	left: 557.5px;
+	top: 571.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_11 {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 5400px;
+	overflow: visible;
+}
+#Group_7_bz {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Path_1_b {
+	fill: rgba(242,203,5,1);
+}
+.Path_1_b {
+	overflow: visible;
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_5_b {
+	position: absolute;
+	width: 1170px;
+	height: 199px;
+	left: 558.5px;
+	top: 390.5px;
+	overflow: visible;
+}
+#DISCOVER_ART a{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1165px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 174px;
+	color: rgba(176,57,30,1);
+	text-decoration: none;
+}
+#DISCOVER_ART_b a{
+	left: 6px;
+	top: 6px;
+	position: absolute;
+	overflow: visible;
+	width: 1165px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 174px;
+	color: rgba(242,78,41,1);
+	text-decoration: none;
+}
+
+#DISCOVER_ART_b a:hover {
+	color: black;
+}
+#Group_6_b {
+	position: absolute;
+	width: 1140px;
+	height: 92px;
+	left: 557px;
+	top: 602px;
+	overflow: visible;
+}
+#Explore_paintings_music_sculpt {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 1141px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: 'cornerstoneregular';
+	font-style: normal;
+	font-weight: normal;
+	font-size: 42px;
+	color: rgba(0,0,0,1);
+}
+#Line_14_b {
+	fill: transparent;
+	stroke: rgba(242,78,41,1);
+	stroke-width: 6px;
+	stroke-linejoin: miter;
+	stroke-linecap: round;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Line_14_b {
+	overflow: visible;
+	position: absolute;
+	width: 1114px;
+	height: 6px;
+	left: 557.5px;
+	top: 571.5px;
+	transform: matrix(1,0,0,1,0,0);
+}
