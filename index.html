@@ -2505,144 +2505,144 @@ var Application = function() {
 			}
 		}
 
-	// 	if (showViews.length) {
-	// 		var viewChangingEvent = new Event(self.VIEW_CHANGING);
-	// 		viewChangingEvent.showViews = showViews;
-	// 		viewChangingEvent.hideViews = hideViews;
-	// 		window.dispatchEvent(viewChangingEvent);
+		if (showViews.length) {
+			var viewChangingEvent = new Event(self.VIEW_CHANGING);
+			viewChangingEvent.showViews = showViews;
+			viewChangingEvent.hideViews = hideViews;
+			window.dispatchEvent(viewChangingEvent);
 
-	// 		if (viewChangingEvent.defaultPrevented==false) {
-	// 			for (var index = 0; index < hideViews.length; index++) {
-	// 				var view = hideViews[index];
-	// 				self.hideElement(view);
-	// 			}
+			if (viewChangingEvent.defaultPrevented==false) {
+				for (var index = 0; index < hideViews.length; index++) {
+					var view = hideViews[index];
+					self.hideElement(view);
+				}
 
-	// 			for (var index = 0; index < showViews.length; index++) {
-	// 				var view = showViews[index];
+				for (var index = 0; index < showViews.length; index++) {
+					var view = showViews[index];
 
-	// 				if (index==showViews.length-1) {
-	// 					self.clearDisplay(view);
-	// 					self.setViewOptions(view);
-	// 					self.setViewVariables(view);
-	// 					self.centerView(view);
-	// 					self.updateURLState(view, state);
-	// 				}
-	// 			}
-	// 		}
+					if (index==showViews.length-1) {
+						self.clearDisplay(view);
+						self.setViewOptions(view);
+						self.setViewVariables(view);
+						self.centerView(view);
+						self.updateURLState(view, state);
+					}
+				}
+			}
 
-	// 		var viewChangeEvent = new Event(self.VIEW_CHANGE);
-	// 		viewChangeEvent.showViews = showViews;
-	// 		viewChangeEvent.hideViews = hideViews;
-	// 		window.dispatchEvent(viewChangeEvent);
-	// 	}
+			var viewChangeEvent = new Event(self.VIEW_CHANGE);
+			viewChangeEvent.showViews = showViews;
+			viewChangeEvent.hideViews = hideViews;
+			window.dispatchEvent(viewChangeEvent);
+		}
 		
-	// }
+	}
 
-	// self.clearDisplay = function(view) {
-	// 	view.style.setProperty("display", null);
-	// }
+	self.clearDisplay = function(view) {
+		view.style.setProperty("display", null);
+	}
 
-	// self.hashChangeHandler = function(event) {
-	// 	var fragment = self.getHashFragment();
-	// 	var view = self.getViewById(fragment);
+	self.hashChangeHandler = function(event) {
+		var fragment = self.getHashFragment();
+		var view = self.getViewById(fragment);
 
-	// 	if (self.showByMediaQuery) {
-	// 		var stateName = fragment;
+		if (self.showByMediaQuery) {
+			var stateName = fragment;
 
-	// 		if (stateName==null || stateName=="") {
-	// 			var initialView = self.getInitialView();
-	// 			stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
-	// 		}
-	// 		self.showMediaQueryViewsByState(stateName);
-	// 	}
-	// 	else {
-	// 		if (view) {
-	// 			self.hideViews();
-	// 			self.showView(view);
-	// 			self.setViewVariables(view);
-	// 			self.updateViewLabel();
+			if (stateName==null || stateName=="") {
+				var initialView = self.getInitialView();
+				stateName = initialView ? self.getStateNameByViewId(initialView.id) : null;
+			}
+			self.showMediaQueryViewsByState(stateName);
+		}
+		else {
+			if (view) {
+				self.hideViews();
+				self.showView(view);
+				self.setViewVariables(view);
+				self.updateViewLabel();
 				
-	// 			window.dispatchEvent(new Event(self.VIEW_CHANGE));
-	// 		}
-	// 		else {
-	// 			window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
-	// 		}
-	// 	}
-	// }
+				window.dispatchEvent(new Event(self.VIEW_CHANGE));
+			}
+			else {
+				window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
+			}
+		}
+	}
 
-	// self.popStateHandler = function(event) {
-	// 	var state = event.state;
-	// 	var fragment = state ? state.name : window.location.hash;
-	// 	var view = self.getViewById(fragment);
+	self.popStateHandler = function(event) {
+		var state = event.state;
+		var fragment = state ? state.name : window.location.hash;
+		var view = self.getViewById(fragment);
 
-	// 	if (view) {
-	// 		self.hideViews();
-	// 		self.showView(view);
-	// 		self.updateViewLabel();
-	// 	}
-	// 	else {
-	// 		window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
-	// 	}
-	// }
+		if (view) {
+			self.hideViews();
+			self.showView(view);
+			self.updateViewLabel();
+		}
+		else {
+			window.dispatchEvent(new Event(self.VIEW_NOT_FOUND));
+		}
+	}
 
-	// self.doubleClickHandler = function(event) {
-	// 	var view = self.getVisibleView();
-	// 	var scaleValue = view ? self.getViewScaleValue(view) : 1;
-	// 	var scaleNeededToFit = view ? self.getViewFitToViewportScale(view) : 1;
-	// 	var scaleNeededToFitWidth = view ? self.getViewFitToViewportWidthScale(view) : 1;
-	// 	var scaleNeededToFitHeight = view ? self.getViewFitToViewportHeightScale(view) : 1;
-	// 	var scaleToFitType = self.scaleToFitType;
+	self.doubleClickHandler = function(event) {
+		var view = self.getVisibleView();
+		var scaleValue = view ? self.getViewScaleValue(view) : 1;
+		var scaleNeededToFit = view ? self.getViewFitToViewportScale(view) : 1;
+		var scaleNeededToFitWidth = view ? self.getViewFitToViewportWidthScale(view) : 1;
+		var scaleNeededToFitHeight = view ? self.getViewFitToViewportHeightScale(view) : 1;
+		var scaleToFitType = self.scaleToFitType;
 
-	// 	// Three scenarios
-	// 	// - scale to fit on double click
-	// 	// - set scale to actual size on double click
-	// 	// - switch between scale to fit and actual page size
+		// Three scenarios
+		// - scale to fit on double click
+		// - set scale to actual size on double click
+		// - switch between scale to fit and actual page size
 
-	// 	if (scaleToFitType=="width") {
-	// 		scaleNeededToFit = scaleNeededToFitWidth;
-	// 	}
-	// 	else if (scaleToFitType=="height") {
-	// 		scaleNeededToFit = scaleNeededToFitHeight;
-	// 	}
+		if (scaleToFitType=="width") {
+			scaleNeededToFit = scaleNeededToFitWidth;
+		}
+		else if (scaleToFitType=="height") {
+			scaleNeededToFit = scaleNeededToFitHeight;
+		}
 
-	// 	// if scale and actual size enabled then switch between
-	// 	if (self.scaleToFitOnDoubleClick && self.actualSizeOnDoubleClick) {
-	// 		var isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
-	// 		var isScaled = false;
+		// if scale and actual size enabled then switch between
+		if (self.scaleToFitOnDoubleClick && self.actualSizeOnDoubleClick) {
+			var isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
+			var isScaled = false;
 			
-	// 		// if scale is not 1 then view needs scaling
-	// 		if (scaleNeededToFit!=1) {
+			// if scale is not 1 then view needs scaling
+			if (scaleNeededToFit!=1) {
 
-	// 			// if current scale is at 1 it is at actual size
-	// 			// scale it to fit
-	// 			if (scaleValue==1) {
-	// 				self.scaleViewToFit(view);
-	// 				isScaled = true;
-	// 			}
-	// 			else {
-	// 				// scale is not at 1 so switch to actual size
-	// 				self.scaleViewToActualSize(view);
-	// 				isScaled = false;
-	// 			}
-	// 		}
-	// 		else {
-	// 			// view is smaller than viewport 
-	// 			// so scale to fit() is scale actual size
-	// 			// actual size and scaled size are the same
-	// 			// but call scale to fit to retain centering
-	// 			self.scaleViewToFit(view);
-	// 			isScaled = false;
-	// 		}
+				// if current scale is at 1 it is at actual size
+				// scale it to fit
+				if (scaleValue==1) {
+					self.scaleViewToFit(view);
+					isScaled = true;
+				}
+				else {
+					// scale is not at 1 so switch to actual size
+					self.scaleViewToActualSize(view);
+					isScaled = false;
+				}
+			}
+			else {
+				// view is smaller than viewport 
+				// so scale to fit() is scale actual size
+				// actual size and scaled size are the same
+				// but call scale to fit to retain centering
+				self.scaleViewToFit(view);
+				isScaled = false;
+			}
 			
-	// 		view.setAttributeNS(null, self.SIZE_STATE_NAME, isScaled+"");
-	// 		isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
-	// 	}
-	// 	else if (self.scaleToFitOnDoubleClick) {
-	// 		self.scaleViewToFit(view);
-	// 	}
-	// 	else if (self.actualSizeOnDoubleClick) {
-	// 		self.scaleViewToActualSize(view);
-	// 	}
+			view.setAttributeNS(null, self.SIZE_STATE_NAME, isScaled+"");
+			isViewScaled = view.getAttributeNS(null, self.SIZE_STATE_NAME);
+		}
+		else if (self.scaleToFitOnDoubleClick) {
+			self.scaleViewToFit(view);
+		}
+		else if (self.actualSizeOnDoubleClick) {
+			self.scaleViewToActualSize(view);
+		}
 
 	}
 
