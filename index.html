@@ -2430,80 +2430,80 @@ var Application = function() {
 		}
 	}
 
-	// self.centerView = function(view) {
+	self.centerView = function(view) {
 
-	// 	if (self.scaleToFit) {
-	// 		self.scaleViewToFit(view, true);
-	// 	}
-	// 	else {
-	// 		self.scaleViewToActualSize(view);  // for centering support for now
-	// 	}
-	// }
+		if (self.scaleToFit) {
+			self.scaleViewToFit(view, true);
+		}
+		else {
+			self.scaleViewToActualSize(view);  // for centering support for now
+		}
+	}
 
-	// self.preventDoubleClick = function(event) {
-	// 	event.stopImmediatePropagation();
-	// }
+	self.preventDoubleClick = function(event) {
+		event.stopImmediatePropagation();
+	}
 
-	// self.getHashFragment = function() {
-	// 	var value = window.location.hash ? window.location.hash.replace("#", "") : "";
-	// 	return value;
-	// }
+	self.getHashFragment = function() {
+		var value = window.location.hash ? window.location.hash.replace("#", "") : "";
+		return value;
+	}
 
-	// self.showBlockElement = function(view) {
-	// 	view.style.display = "block";
-	// }
+	self.showBlockElement = function(view) {
+		view.style.display = "block";
+	}
 
-	// self.hideElement = function(view) {
-	// 	view.style.display = "none";
-	// }
+	self.hideElement = function(view) {
+		view.style.display = "none";
+	}
 
-	// self.showStateFunction = null;
+	self.showStateFunction = null;
 
-	// self.showMediaQueryViewsByState = function(state, event) {
-	// 	// browser will hide and show by media query (small, medium, large)
-	// 	// but if multiple views exists at same size user may want specific view
-	// 	// if showStateFunction is defined that is called with state fragment and user can show or hide each media matching view by returning true or false
-	// 	// if showStateFunction is not defined and state is defined and view has a defined state that matches then show that and hide other matching views
-	// 	// if no state is defined show view 
-	// 	// an viewChanging event is dispatched before views are shown or hidden that can be prevented 
+	self.showMediaQueryViewsByState = function(state, event) {
+		// browser will hide and show by media query (small, medium, large)
+		// but if multiple views exists at same size user may want specific view
+		// if showStateFunction is defined that is called with state fragment and user can show or hide each media matching view by returning true or false
+		// if showStateFunction is not defined and state is defined and view has a defined state that matches then show that and hide other matching views
+		// if no state is defined show view 
+		// an viewChanging event is dispatched before views are shown or hidden that can be prevented 
 
-	// 	// get all matched queries
-	// 	// if state name is specified then show that view and hide other views
-	// 	// if no state name is defined then show
-	// 	var matchedViews = self.getMatchingViews();
-	// 	var matchMediaQuery = true;
-	// 	var foundViews = self.getViewsByStateName(state, matchMediaQuery);
-	// 	var showViews = [];
-	// 	var hideViews = [];
+		// get all matched queries
+		// if state name is specified then show that view and hide other views
+		// if no state name is defined then show
+		var matchedViews = self.getMatchingViews();
+		var matchMediaQuery = true;
+		var foundViews = self.getViewsByStateName(state, matchMediaQuery);
+		var showViews = [];
+		var hideViews = [];
 
-	// 	// loop views that match media query 
-	// 	for (let index = 0; index < matchedViews.length; index++) {
-	// 		var view = matchedViews[index];
+		// loop views that match media query 
+		for (let index = 0; index < matchedViews.length; index++) {
+			var view = matchedViews[index];
 			
-	// 		// let user determine visible view
-	// 		if (self.showStateFunction!=null) {
-	// 			if (self.showStateFunction(view, state)) {
-	// 				showViews.push(view);
-	// 			}
-	// 			else {
-	// 				hideViews.push(view);
-	// 			}
-	// 		}
-	// 		// state was defined so check if view matches state
-	// 		else if (foundViews.length) {
+			// let user determine visible view
+			if (self.showStateFunction!=null) {
+				if (self.showStateFunction(view, state)) {
+					showViews.push(view);
+				}
+				else {
+					hideViews.push(view);
+				}
+			}
+			// state was defined so check if view matches state
+			else if (foundViews.length) {
 
-	// 			if (foundViews.indexOf(view)!=-1) {
-	// 				showViews.push(view);
-	// 			}
-	// 			else {
-	// 				hideViews.push(view);
-	// 			}
-	// 		}
-	// 		// if no state names are defined show view (define unused state name to exclude)
-	// 		else if (state==null || state=="") {
-	// 			showViews.push(view);
-	// 		}
-	// 	}
+				if (foundViews.indexOf(view)!=-1) {
+					showViews.push(view);
+				}
+				else {
+					hideViews.push(view);
+				}
+			}
+			// if no state names are defined show view (define unused state name to exclude)
+			else if (state==null || state=="") {
+				showViews.push(view);
+			}
+		}
 
 	// 	if (showViews.length) {
 	// 		var viewChangingEvent = new Event(self.VIEW_CHANGING);
