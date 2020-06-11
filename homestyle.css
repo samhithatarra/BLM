@@ -6,17 +6,19 @@
     font-style: normal;
 
 }
-.mediaViewInfo {
+
+
+/* .mediaViewInfo {
 	--web-view-name: home – 1;
 	--web-view-id: home__1;
 	--web-scale-to-fit: true;
 	--web-scale-to-fit-type: width;
 	--web-scale-on-resize: true;
 	--web-enable-deep-linking: true;
-}
-:root {
+} */
+/* :root {
 	--web-view-ids: home__1;
-}
+} */
 * {
 	margin: 0;
 	padding: 0;
@@ -25,16 +27,17 @@
 }
 #home__1 {
 	position: absolute;
-	width: 1920px;
+	/* height: 100%; */
+	width: 1440px;
 	height: 6480px;
 	background-color: rgba(255,255,255,1);
 	overflow: hidden;
-	--web-view-name: home – 1;
+	/* --web-view-name: home – 1;
 	--web-view-id: home__1;
 	--web-scale-to-fit: true;
 	--web-scale-to-fit-type: width;
 	--web-scale-on-resize: true;
-	--web-enable-deep-linking: true;
+	--web-enable-deep-linking: true; */
 }
 #ID1W4A9448-1200x800 {
 	position: absolute;
@@ -57,8 +60,8 @@
 	top: 0px;
 }
 #FILTERBLACK {
-	left: 833px;
-	top: 32px;
+	left: 500px;
+	top: 200px;
 	position: fixed;
 	overflow: visible;
 	width: 256px;
@@ -67,7 +70,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 45px;
+	font-size: 130px;
 	color: rgba(255,255,255,1);
 }
 #Contact {
@@ -216,7 +219,7 @@
 }
 #Group_7 {
 	position: absolute;
-	width: 1920px;
+	width: 1440px;
 	height: 1080px;
 	left: 0px;
 	top: 1080px;
@@ -237,7 +240,7 @@
 	position: absolute;
 	width: 1232px;
 	height: 211px;
-	left: 557.5px;
+	left: 350px;
 	top: 390.5px;
 	overflow: visible;
 }
@@ -252,7 +255,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 185px;
+	font-size: 130px;
 	color: rgba(20,133,179,1);
 	text-decoration: none;
 
@@ -268,7 +271,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 185px;
+	font-size: 130px;
 	color: rgba(28,191,255,1);
 	text-decoration: none;
 	
@@ -280,8 +283,8 @@
 	position: absolute;
 	width: 1205px;
 	height: 46px;
-	left: 557px;
-	top: 602px;
+	left: 360px;
+	top: 540px;
 	overflow: visible;
 }
 #Explore_fashion_made_by_black_ {
@@ -291,11 +294,11 @@
 	overflow: visible;
 	width: 1206px;
 	white-space: nowrap;
-	text-align: left;
+	text-align: center;
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 42px;
+	font-size: 30px;
 	color: rgba(0,0,0,1);
 }
 #Line_14 {
@@ -310,15 +313,15 @@
 .Line_14 {
 	overflow: visible;
 	position: absolute;
-	width: 1211px;
+	width: 850px;
 	height: 6px;
-	left: 557.5px;
-	top: 571.5px;
+	left: 530.5px;
+	top: 520.5px;
 	transform: matrix(1,0,0,1,0,0);
 }
 #Group_9 {
 	position: absolute;
-	width: 1920px;
+	width: 1440px;
 	height: 1080px;
 	left: 0px;
 	top: 2160px;
@@ -326,7 +329,7 @@
 }
 #Group_7_ {
 	position: absolute;
-	width: 1920px;
+	width: 1440px;
 	height: 1080px;
 	left: 0px;
 	top: 0px;
@@ -347,7 +350,7 @@
 	position: absolute;
 	width: 906px;
 	height: 211px;
-	left: 554.5px;
+	left: 420px;
 	top: 390.5px;
 	overflow: visible;
 }
@@ -362,7 +365,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 185px;
+	font-size: 130px;
 	color: rgba(168,141,3,1);
 	text-decoration: none;
 }
@@ -377,7 +380,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 185px;
+	font-size: 130px;
 	color: rgba(242,203,5,1);
 	text-decoration: none;
 }
@@ -389,8 +392,8 @@
 	position: absolute;
 	width: 1086px;
 	height: 92px;
-	left: 557px;
-	top: 602px;
+	left: 550px;
+	top: 550px;
 	overflow: visible;
 }
 #Discover_a_variety_of_black_ow {
@@ -404,7 +407,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 42px;
+	font-size: 30px;
 	color: rgba(255,255,255,1);
 }
 #Line_14_bf {
@@ -419,10 +422,10 @@
 .Line_14_bf {
 	overflow: visible;
 	position: absolute;
-	width: 909px;
+	width: 600px;
 	height: 6px;
 	left: 557.5px;
-	top: 571.5px;
+	top: 520.5px;
 	transform: matrix(1,0,0,1,0,0);
 }
 #Group_9_bg {
@@ -456,7 +459,7 @@
 	position: absolute;
 	width: 1270px;
 	height: 199px;
-	left: 554.5px;
+	left: 300.5px;
 	top: 390.5px;
 	overflow: visible;
 }
@@ -471,7 +474,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 174px;
+	font-size: 130px;
 	color: rgba(179,58,30,1);
 	text-decoration: none;
 }
@@ -486,7 +489,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 174px;
+	font-size: 130px;
 	color: rgba(242,78,41,1);
 	text-decoration: none;
 }
@@ -499,8 +502,8 @@
 	position: absolute;
 	width: 1107px;
 	height: 92px;
-	left: 557px;
-	top: 602px;
+	left: 455px;
+	top: 550px;
 	overflow: visible;
 }
 #See_what_Black_innovators_are_ {
@@ -514,7 +517,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 42px;
+	font-size: 30px;
 	color: rgba(0,0,0,1);
 }
 #Line_14_bo {
@@ -529,15 +532,15 @@
 .Line_14_bo {
 	overflow: visible;
 	position: absolute;
-	width: 1259px;
+	width: 930px;
 	height: 6px;
-	left: 557.5px;
-	top: 571.5px;
+	left: 460.5px;
+	top: 520.5px;
 	transform: matrix(1,0,0,1,0,0);
 }
 #Group_10 {
 	position: absolute;
-	width: 1920px;
+	width: 1440px;
 	height: 1080px;
 	left: 0px;
 	top: 4320px;
@@ -567,7 +570,7 @@
 	position: absolute;
 	width: 1120px;
 	height: 199px;
-	left: 558.5px;
+	left: 350.5px;
 	top: 390.5px;
 	overflow: visible;
 }
@@ -582,7 +585,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 174px;
+	font-size: 130px;
 	color: rgba(171,143,3,1);
 	text-decoration: none;
 }
@@ -597,20 +600,20 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 174px;
+	font-size: 130px;
 	color: rgba(242,203,5,1);
 	text-decoration: none;
 }
 
 #SHOP_BEAUTY_bu a:hover {
-	color: skyblue;
+	color: rgba(28,191,255,1);
 }
 #Group_6_bv {
 	position: absolute;
 	width: 1189px;
 	height: 92px;
-	left: 557px;
-	top: 602px;
+	left: 500px;
+	top: 550px;
 	overflow: visible;
 }
 #Look_for_black_owned_beauty_co {
@@ -624,7 +627,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 42px;
+	font-size: 30px;
 	color: rgba(255,255,255,1);
 }
 #Line_14_bx {
@@ -639,15 +642,15 @@
 .Line_14_bx {
 	overflow: visible;
 	position: absolute;
-	width: 1114px;
+	width: 800px;
 	height: 6px;
-	left: 557.5px;
-	top: 571.5px;
+	left: 500.5px;
+	top: 530.5px;
 	transform: matrix(1,0,0,1,0,0);
 }
 #Group_11 {
 	position: absolute;
-	width: 1920px;
+	width: 1440px;
 	height: 1080px;
 	left: 0px;
 	top: 5400px;
@@ -655,7 +658,7 @@
 }
 #Group_7_bz {
 	position: absolute;
-	width: 1920px;
+	width: 1440px;
 	height: 1080px;
 	left: 0px;
 	top: 0px;
@@ -677,7 +680,7 @@
 	position: absolute;
 	width: 1170px;
 	height: 199px;
-	left: 558.5px;
+	left: 360.5px;
 	top: 390.5px;
 	overflow: visible;
 }
@@ -692,7 +695,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 174px;
+	font-size: 130px;
 	color: rgba(176,57,30,1);
 	text-decoration: none;
 }
@@ -707,7 +710,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 174px;
+	font-size: 130px;
 	color: rgba(242,78,41,1);
 	text-decoration: none;
 }
@@ -719,8 +722,8 @@
 	position: absolute;
 	width: 1140px;
 	height: 92px;
-	left: 557px;
-	top: 602px;
+	left: 510px;
+	top: 550px;
 	overflow: visible;
 }
 #Explore_paintings_music_sculpt {
@@ -734,7 +737,7 @@
 	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 42px;
+	font-size: 30px;
 	color: rgba(0,0,0,1);
 }
 #Line_14_b {
@@ -749,9 +752,9 @@
 .Line_14_b {
 	overflow: visible;
 	position: absolute;
-	width: 1114px;
+	width: 860px;
 	height: 6px;
-	left: 557.5px;
-	top: 571.5px;
+	left: 510.5px;
+	top: 520.5px;
 	transform: matrix(1,0,0,1,0,0);
 }
