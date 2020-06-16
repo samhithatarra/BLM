@@ -1,0 +1,450 @@
+@font-face {
+    font-family: 'cornerstoneregular';
+    src: url('webfontkit-20200609-184935/cornerstone-webfont.woff2') format('woff2'),
+         url('webfontkit-20200609-184935/cornerstone-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html{
+    background-color: black;
+    scroll-behavior: smooth;
+}
+nav{
+    position: fixed;
+    z-index: 99;
+    padding-top: 3vw;
+}
+nav a{
+    
+    font-family: 'cornerstoneregular';
+    text-decoration: none;
+    color: rgba(255,255,255,1);
+    font-size: 2vw;
+    padding-left: 2vw;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    padding-right: 3vw; 
+    padding-left: 6.2vw;
+    text-align: right;
+    opacity: 80%;
+
+
+
+}
+
+.vertical { 
+    border-left: 0.5vw solid rgba(255,255,255,1); 
+    height: 32vw; 
+    position:absolute; 
+    left: 100%; 
+    opacity: 80%;
+}
+#HOME {
+    color: rgba(20,133,179,1);
+    text-decoration: underline;
+}
+nav a:hover{
+    color: rgba(20,133,179,1);
+    text-decoration: underline;
+}
+#FILTERBLACK{
+    float: right;
+    color: rgba(255,255,255,1);
+    font-family: 'cornerstoneregular';
+    font-size: 5vw;
+    text-align: center;
+    text-shadow: -6px -5px rgba(20,133,179,1);
+
+}
+#CONTACT a{
+
+    color: rgba(255,255,255,1);
+    font-family: 'cornerstoneregular';
+    position: fixed;
+    bottom: 0;
+    left: 40px;
+    font-size: 5vw;
+    z-index: 99;
+    text-decoration: none;
+}
+#CONTACT a:hover{
+    color: rgba(20,133,179,1);
+}
+#ABOUT a{
+    float: right;
+    color: rgba(255,255,255,1);
+    font-family: 'cornerstoneregular';
+    position: fixed;
+    right: 40px;
+    bottom: 0;
+    font-size: 5vw;
+    z-index: 99;
+    text-decoration: none;
+}
+#ABOUT a:hover{
+    color: rgba(20,133,179,1);
+}
+#NEXT1 a{
+    color: rgba(242,78,41,1);
+    float: right;
+    font-family: 'cornerstoneregular';
+    position: absolute;
+    right: 60vw;
+    bottom: 2vw;
+    font-size: 3vw;
+    z-index: 99;
+    text-decoration: none;
+}
+#NEXT2 a{
+    color: rgba(28,191,255,1);
+    float: right;
+    font-family: 'cornerstoneregular';
+    position: absolute;
+    right: 20vw;
+    bottom: 25vw;
+    font-size: 3vw;
+    z-index: 99;
+    text-decoration: none;
+}
+#NEXT3 a{
+    color: rgba(242,203,5,1);
+    float: right;
+    font-family: 'cornerstoneregular';
+    position: absolute;
+    right: 13vw;
+    bottom: 25vw;
+    font-size: 3vw;
+    z-index: 99;
+    text-decoration: none;
+}
+#NEXT4 a{
+    color: rgba(242,78,41,1);
+    float: right;
+    font-family: 'cornerstoneregular';
+    position: absolute;
+    right: 26vw;
+    bottom: 25vw;
+    font-size: 3vw;
+    z-index: 99;
+    text-decoration: none;
+}
+#NEXT5 a{
+    color: rgba(28,191,255,1);
+    float: right;
+    font-family: 'cornerstoneregular';
+    position: absolute;
+    right: 31vw;
+    bottom: 25vw;
+    font-size: 3vw;
+    z-index: 99;
+    text-decoration: none;
+}
+#NEXT6 a{
+    color: rgba(242,203,5,1);
+    float: right;
+    font-family: 'cornerstoneregular';
+    position: absolute;
+    right: 19vw;
+    bottom: 25vw;
+    font-size: 3vw;
+    z-index: 99;
+    text-decoration: none;
+}
+
+#NEXT7 a{
+    color: rgba(242,78,41,1);
+    float: right;
+    font-family: 'cornerstoneregular';
+    position: absolute;
+    right: 22vw;
+    bottom: 25vw;
+    font-size: 3vw;
+    z-index: 99;
+    text-decoration: none;
+}
+
+#Group_1 {
+	position: absolute;
+	width: auto;
+	height: 1080px;
+	left: 0px;
+	top: 1080px;
+    overflow: visible;
+
+}
+#Rectangle_1 {
+	fill: rgba(242,203,5,1);
+}
+.SlideSize {
+	position: absolute;
+	overflow: visible;
+	width: auto;
+	height: 1080px;
+	left: 0px;
+	top: 0px;
+}
+
+
+#SHOP_FASHION a{
+    top: 300px;
+    left: 49%;
+    position: relative;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-size: 9vw;
+	color: rgba(28,191,255,1);
+    text-shadow: -6px -5px rgba(20,133,179,1);
+    text-decoration: underline;
+
+}
+#SHOP_FASHION a:hover{
+    color: black;
+}
+
+#SHOP_FASHION p{
+
+	font-family: 'cornerstoneregular';
+    position: relative;
+    font-size: 2vw;
+    left: 49%;
+    top: 300px;
+    text-align: left;
+    word-wrap: break-word;
+    color: black;
+    /* display: block; */
+    /* word-wrap: break-word; */
+    max-width: 1000px;
+
+}
+#Group_2 {
+	position: absolute;
+	width: auto;
+	height: 1080px;
+	left: 0px;
+	top: 2160px;
+    overflow: visible;
+
+}
+#Rectangle_2 {
+	fill:rgba(242,78,41,1);
+}
+#FIND_FOOD a{
+    left: 55%;
+    top: 300px;
+    position: relative;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-size: 9vw;
+	color: rgba(242,203,5,1);
+    text-shadow: -6px -5px rgba(168,141,3,1);
+    text-decoration: underline;
+
+}
+#FIND_FOOD a:hover{
+    color: black;
+}
+
+#FIND_FOOD p{
+
+	font-family: 'cornerstoneregular';
+    position: relative;
+    font-size: 2vw;
+    left: 55%;
+    top: 300px;
+    text-align: left;
+    word-wrap: break-word;
+    color: rgba(255,255,255,1);
+    /* display: block; */
+    /* word-wrap: break-word; */
+    max-width: 1000px;
+
+}
+#Group_3 {
+	position: absolute;
+	width: auto;
+	height: 1080px;
+	left: 0px;
+	top: 3240px;
+    overflow: visible;
+
+}
+#Rectangle_3 {
+	fill:rgba(28,191,255,1);
+}
+#DISCOVER_TECH a{
+    top: 300px;
+    left: 45%;
+    position: relative;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+	font-size: 9vw;
+	color: rgba(242,78,41,1);
+    text-shadow: -6px -5px rgba(179,58,30,1);
+    text-decoration: underline;
+
+}
+#DISCOVER_TECH a:hover{
+    color: black;
+}
+
+#DISCOVER_TECH p{
+
+	font-family: 'cornerstoneregular';
+    position: relative;
+    font-size: 2vw;
+    left: 45%;
+    top: 300px;
+    text-align: left;
+    word-wrap: break-word;
+    color: black;
+    /* display: block; */
+    /* word-wrap: break-word; */
+    max-width: 1000px;
+
+}
+#Group_4 {
+	position: absolute;
+	width: auto;
+	height: 1080px;
+	left: 0px;
+	top: 4320px;
+    overflow: visible;
+
+}
+#Rectangle_4 {
+	fill: #F24E29;
+}
+#EXPLORE_ACCESSORIES a{
+    top: 300px;
+    left: 40%;
+    position: relative;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+    font-size: 6.5vw;
+	color: #1CBFFF;
+    text-shadow: -6px -5px #1485B3;
+    text-decoration: underline;
+
+}
+#EXPLORE_ACCESSORIES a:hover{
+    color: black;
+}
+
+#EXPLORE_ACCESSORIES p{
+
+	font-family: 'cornerstoneregular';
+    position: relative;
+    font-size: 2vw;
+    left: 40%;
+    top: 300px;
+    text-align: left;
+    word-wrap: break-word;
+    color: rgba(255,255,255,1);
+    /* display: block; */
+    /* word-wrap: break-word; */
+    max-width: 1000px;
+
+}
+#Group_5 {
+	position: absolute;
+	width: auto;
+	height: 1080px;
+	left: 0px;
+	top: 5400px;
+    overflow: visible;
+
+}
+#Rectangle_5 {
+	fill: rgba(0,0,0,1);
+}
+#SHOP_BEAUTY a{
+    top: 300px;
+    left: 50%;
+    position: relative;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+    font-size: 9vw;
+	color: rgba(242,203,5,1);
+    text-shadow: -6px -5px rgba(171,143,3,1);
+    text-decoration: underline;
+
+}
+#SHOP_BEAUTY a:hover{
+    color: rgba(28,191,255,1);
+}
+
+#SHOP_BEAUTY p{
+
+	font-family: 'cornerstoneregular';
+    position: relative;
+    font-size: 2vw;
+    left: 50%;
+    top: 300px;
+    text-align: left;
+    word-wrap: break-word;
+    color: rgba(255,255,255,1);
+    /* display: block; */
+    /* word-wrap: break-word; */
+    max-width: 1000px;
+
+}
+#Group_6 {
+	position: absolute;
+	width: auto;
+	height: 1080px;
+	left: 0px;
+	top: 6480px;
+    overflow: visible;
+
+}
+#Rectangle_6 {
+	fill: rgba(242,203,5,1);
+}
+#DISCOVER_ART a{
+    top: 300px;
+    left: 50%;
+    position: relative;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+    font-size: 9vw;
+	color: rgba(242,78,41,1);
+    text-shadow: -6px -5px rgba(176,57,30,1);
+    text-decoration: underline;
+
+}
+#DISCOVER_ART a:hover{
+    color: black;
+}
+
+#DISCOVER_ART p{
+
+	font-family: 'cornerstoneregular';
+    position: relative;
+    font-size: 2vw;
+    left: 50%;
+    top: 300px;
+    text-align: left;
+    word-wrap: break-word;
+    color: rgba(255,255,255,1);
+    /* display: block; */
+    /* word-wrap: break-word; */
+    max-width: 1000px;
+
+}
+
+@media screen and (max-width: 850px){
+
+
+
+
+}
+
+
