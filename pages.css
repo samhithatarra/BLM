@@ -14,9 +14,7 @@ html{
     background-color: snow;
     scroll-behavior: smooth;
 }
-/* .BODYNAV{
-    padding-top: 15vw;
-} */
+
 .ARROWS{
     padding-top: 0.5vw;
 }
@@ -50,8 +48,7 @@ nav a{
 .BODYNAV a{
   text-decoration: none;
   font-family: 'cornerstoneregular';
-  text-shadow: -3px -2px black;
-  /* padding-top: 14vw; */
+  text-shadow: -0.4vw -0.2vw black;
 }
 img {
     display: block;
@@ -132,6 +129,19 @@ img {
     .cards_wrap .card_item {
       width: 100%;
     }
+    .PAGE_TITLE{
+        font-size: 11vw;
+    }
+
+    .cards_wrap .feat_info .title {
+        font-size: 6vw;
+    }
+    .cards_wrap .card_bottom .card_info .title {
+        font-size: 6vw;
+    }
+
+    
+
 }
 
 /*FASH*/

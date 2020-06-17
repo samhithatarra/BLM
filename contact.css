@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'cornerstoneregular';
+    src: url('cornerstone-font-kit/cornerstone-webfont.woff2') format('woff2'),
+         url('cornerstone-font-kit/cornerstone-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .mediaViewInfo {
 	--web-view-name: Contact;
 	--web-view-id: Contact;
@@ -75,7 +83,7 @@ a:hover {
 	width: 168px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 58px;
@@ -89,7 +97,7 @@ a:hover {
 	width: 168px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 58px;
@@ -111,7 +119,7 @@ a:hover {
 	width: 235px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 58px;
@@ -125,7 +133,7 @@ a:hover {
 	width: 235px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 58px;
@@ -147,7 +155,7 @@ a:hover {
 	width: 149px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 57px;
@@ -161,7 +169,7 @@ a:hover {
 	width: 149px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 57px;
@@ -191,7 +199,7 @@ a:hover {
 	width: 1124px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 102px;
@@ -206,7 +214,7 @@ a:hover {
 	width: 1124px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 102px;
@@ -220,7 +228,7 @@ a:hover {
 	width: 499px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 54px;
@@ -242,7 +250,7 @@ a:hover {
 	width: 209px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 102px;
@@ -256,7 +264,7 @@ a:hover {
 	width: 209px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 102px;
@@ -270,7 +278,7 @@ a:hover {
 	width: 891px;
 	white-space: nowrap;
 	text-align: left;
-	font-family: Cornerstone;
+	font-family: 'cornerstoneregular';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 54px;

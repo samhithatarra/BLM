@@ -57,7 +57,7 @@ nav a:hover{
     font-family: 'cornerstoneregular';
     font-size: 5vw;
     text-align: center;
-    text-shadow: -6px -5px rgba(20,133,179,1);
+    text-shadow: -0.4vw -0.3vw rgba(20,133,179,1);
 
 }
 #CONTACT a{
@@ -198,7 +198,7 @@ nav a:hover{
 	font-family: 'cornerstoneregular';
 	font-size: 9vw;
 	color: rgba(28,191,255,1);
-    text-shadow: -6px -5px rgba(20,133,179,1);
+    text-shadow: -0.4vw -0.3vw rgba(20,133,179,1);
     text-decoration: underline;
 
 }
@@ -242,7 +242,7 @@ nav a:hover{
 	font-family: 'cornerstoneregular';
 	font-size: 9vw;
 	color: rgba(242,203,5,1);
-    text-shadow: -6px -5px rgba(168,141,3,1);
+    text-shadow: -0.4vw -0.3vw rgba(168,141,3,1);
     text-decoration: underline;
 
 }
@@ -286,7 +286,7 @@ nav a:hover{
 	font-family: 'cornerstoneregular';
 	font-size: 9vw;
 	color: rgba(242,78,41,1);
-    text-shadow: -6px -5px rgba(179,58,30,1);
+    text-shadow: -0.4vw -0.3vw rgba(179,58,30,1);
     text-decoration: underline;
 
 }
@@ -328,9 +328,9 @@ nav a:hover{
 	white-space: nowrap;
 	text-align: center;
 	font-family: 'cornerstoneregular';
-    font-size: 6.5vw;
+    font-size: 8vw;
 	color: #1CBFFF;
-    text-shadow: -6px -5px #1485B3;
+    text-shadow: -0.4vw -0.3vw #1485B3;
     text-decoration: underline;
 
 }
@@ -374,7 +374,7 @@ nav a:hover{
 	font-family: 'cornerstoneregular';
     font-size: 9vw;
 	color: rgba(242,203,5,1);
-    text-shadow: -6px -5px rgba(171,143,3,1);
+    text-shadow: -0.4vw -0.3vw rgba(171,143,3,1);
     text-decoration: underline;
 
 }
@@ -418,7 +418,7 @@ nav a:hover{
 	font-family: 'cornerstoneregular';
     font-size: 9vw;
 	color: rgba(242,78,41,1);
-    text-shadow: -6px -5px rgba(176,57,30,1);
+    text-shadow: -0.4vw -0.3vw rgba(176,57,30,1);
     text-decoration: underline;
 
 }
@@ -443,8 +443,111 @@ nav a:hover{
 }
 
 @media screen and (max-width: 850px){
+    .vertical { 
+        border-left: 0.5vw solid rgba(255,255,255,1); 
+        height: 80vw;
+    }
+    nav a{
+        font-size: 3.5vw;
+        padding-left: 1vw;
+    }
 
+    #FILTERBLACK{
+        padding-right: 0vw;
+    }
+    #SHOP_FASHION{
+        padding-left: 8vw;
 
+    }
+    #FIND_FOOD{
+        padding-left: 10vw;
+
+    }
+    #DISCOVER_TECH{
+        padding-left: 3vw;
+
+    }
+    #EXPLORE_ACCESSORIES{
+        padding-left: 6vw;
+
+    }
+    #SHOP_BEAUTY{
+        padding-left: 8vw;
+
+    }
+    #DISCOVER_ART{
+        padding-left: 6vw;
+
+    }
+
+    #CONTACT a{
+        font-size: 6vw;
+    }
+    #ABOUT a{
+        font-size: 6vw;
+    }
+    #NEXT1 a{
+        right: 35vw;
+        font-size: 8vw;
+    }
+
+    #NEXT2 a{
+        right: 1vw;
+        font-size: 40px;
+    }
+
+    #NEXT3 a{
+        right: -4vw;
+        font-size: 8vw;
+    }
+    #NEXT4 a{
+        right: 0vw;
+        font-size: 8vw;
+    }
+    #NEXT5 a{
+        right: 4vw;
+        font-size: 8vw;
+    }
+    #NEXT6 a{
+        right: -1vw;
+        font-size: 8vw;
+    }
+
+    #NEXT7 a{
+        right: 5vw;
+        font-size: 8vw;
+    }
+    #Group_1 {
+        height: 800px;
+        top: 800px;
+ 
+    }
+    #Group_2 {
+        height: 800px;
+        top: 1600px;
+    
+    }
+    #Group_3 {
+        height: 800px;
+        top: 2400px;
+    
+    }
+    #Group_4 {
+        height: 800px;
+        top: 3200px;
+    
+    }
+    #Group_5 {
+        height: 800px;
+        top: 4000px;
+    
+    }
+    #Group_6 {
+        height: 800px;
+        top: 4800px
+    
+    }
+    
 
 
 }
