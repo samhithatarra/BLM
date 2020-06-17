@@ -1,0 +1,241 @@
+.mediaViewInfo {
+	--web-view-name: About;
+	--web-view-id: About;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: About;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+a {
+	color:#1CBFFF;
+}
+a:visited {
+	color:#1CBFFF;
+}
+a:hover {
+	color:#F2CB05;
+}
+
+#About {
+	position: absolute;
+	width: 1920px;
+	height: 1080px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: About;
+	--web-view-id: About;
+	--web-scale-to-fit: true;
+	--web-scale-to-fit-type: width;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#nav {
+	position: absolute;
+	width: 1920px;
+	height: 224px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#nav_header {
+	fill: rgba(255,255,255,1);
+}
+.nav_header {
+	filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.161));
+	position: absolute;
+	overflow: visible;
+	width: 1950px;
+	height: 254px;
+	left: 0px;
+	top: 0px;
+}
+#nav_titles {
+	position: absolute;
+	width: 1684px;
+	height: 68px;
+	left: 118px;
+	top: 75px;
+	overflow: visible;
+}
+#home {
+	position: absolute;
+	width: 151px;
+	height: 66px;
+	left: 0px;
+	top: 1px;
+	overflow: visible;
+}
+#HOME_v {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 149px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Cornerstone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 57px;
+	color: rgba(179,58,30,1);
+}
+#HOME_w {
+	left: 3px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 149px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Cornerstone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 57px;
+	color: rgba(28,191,255,1);
+}
+#about {
+	position: absolute;
+	width: 170px;
+	height: 68px;
+	left: 757px;
+	top: 0px;
+	overflow: visible;
+}
+#About_y {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 168px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Cornerstone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 58px;
+	color: rgba(179,58,30,1);
+}
+#About_z {
+	left: 3px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 168px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Cornerstone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 58px;
+	color: rgba(28,191,255,1);
+}
+#contact {
+	position: absolute;
+	width: 237px;
+	height: 68px;
+	left: 1447px;
+	top: 0px;
+	overflow: visible;
+}
+#CONTACT_ {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 235px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Cornerstone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 58px;
+	color: rgba(179,58,30,1);
+}
+#CONTACT_ba {
+	left: 3px;
+	top: 3px;
+	position: absolute;
+	overflow: visible;
+	width: 235px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Cornerstone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 58px;
+	color: rgba(28,191,255,1);
+}
+#body {
+	position: absolute;
+	width: 1303px;
+	height: 776px;
+	left: 309px;
+	top: 321px;
+	overflow: visible;
+}
+#_WAS_FOUNDED_IN_2020_BY_TWO_Ba {
+	left: 0px;
+	top: 76px;
+	position: absolute;
+	overflow: visible;
+	width: 1304px;
+	height: 700px;
+	line-height: 120px;
+	margin-top: -32.5px;
+	text-align: center;
+	font-family: Cornerstone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 55px;
+	color: rgba(255,255,255,1);
+}
+#flterblack {
+	position: absolute;
+	width: 812px;
+	height: 139px;
+	left: 243px;
+	top: 0px;
+	overflow: visible;
+}
+#FLTERBLACK_ {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 807px;
+	white-space: nowrap;
+	line-height: 320px;
+	margin-top: -100px;
+	text-align: left;
+	font-family: Cornerstone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 120px;
+	color: rgba(20,133,179,1);
+}
+#FLTERBLACK_ba {
+	left: 6px;
+	top: 6px;
+	position: absolute;
+	overflow: visible;
+	width: 807px;
+	white-space: nowrap;
+	line-height: 320px;
+	margin-top: -100px;
+	text-align: left;
+	font-family: Cornerstone;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 120px;
+	color: rgba(28,191,255,1);
+}
