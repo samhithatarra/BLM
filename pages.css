@@ -20,8 +20,8 @@ html{
 }
 header{
     width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     top: 0;
     background-color: snow;
     position: fixed;
@@ -29,11 +29,11 @@ header{
 }
 .HOMEBUTTON{
     padding-top: 2.5vw;
-  }
+}
 #featured{
-      font-family: 'cornerstoneregular';
-      padding-left: 1vw;
-      padding-bottom: 2vw;
+    font-family: 'cornerstoneregular';
+    padding-left: 1vw;
+    padding-bottom: 2vw;
 }
 .PAGE_TITLE {
     font-size: 7vw;
@@ -48,7 +48,7 @@ nav a{
 .BODYNAV a{
   text-decoration: none;
   font-family: 'cornerstoneregular';
-  text-shadow: -0.4vw -0.2vw black;
+  text-shadow: -0.25vw -0.18vw black;
 }
 img {
     display: block;
@@ -73,8 +73,8 @@ img {
 }
 .cards_wrap .card_inner {
     border-radius: 25px;
-    background: black;
-    box-shadow: 4px 4px 6px rgba(106, 106, 106, 0.6);
+    background:white;
+    box-shadow: 5.7px 4px 15px rgba(128, 128, 128, 0.2);
 }
 .cards_wrap .card_top {
     width: 100%;
@@ -89,9 +89,9 @@ img {
 }
 .cards_wrap .feat_info {
     padding: 25px;
-    background: black;
+    background:white;
     border-radius: 0px 0px 25px 25px;
-    color: white;
+    color: black;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 .cards_wrap .feat_info .title {
@@ -110,6 +110,17 @@ img {
 }
 .cards_wrap .card_bottom .card_info .title:hover {
     text-decoration: underline;
+}
+.location {
+    word-spacing: -0.3em;
+    font-size: 1.4vw;
+    font-family: 'cornerstoneregular';
+    color:grey;
+    text-decoration: none;
+}
+
+.location:hover{
+    color: black;
 }
   
 @media (max-width: 1024px) {
@@ -139,62 +150,83 @@ img {
     .cards_wrap .card_bottom .card_info .title {
         font-size: 6vw;
     }
-
-    
-
 }
 
 /*FASH*/
-#fash {
+#fash a {
     color: #1CBFFF;
-    text-shadow: -0.2vw -0.1vw #F2CB05;
+    text-shadow: -0.13vw -0.1vw #F2CB05;
+    text-decoration: none;
 }
-#fash:hover {
+#fash a:hover{
     color: #F24E29;
+    text-decoration: underline;
 }
 
 /*FOOD*/
-#food {
+#food a {
     color: #F2CB05;
-    text-shadow: -0.2vw -0.1vw #F24E29;
+    text-shadow: -0.13vw -0.1vw #F24E29;
+    text-decoration: none;
 }
-#food:hover {
+#food a:hover {
     color: #1CBFFF;
+    text-decoration: underline;
 }
 
 /*TECH*/
-#tech {
+#tech a {
     color: #F24E29;
-    text-shadow: -0.2vw -0.1vw #1cbfff;
+    text-shadow: -0.13vw -0.1vw #1cbfff;
+    text-decoration: none;
 }
-#tech:hover {
+#tech a:hover {
     color: #f2cb05;
+    text-decoration: underline;
 }
 
 /*ACC*/
-#acc {
+#acc a {
     color: #1CBFFF;
-    text-shadow: -0.2vw -0.1vw #F24E29;
+    text-shadow: -0.13vw -0.1vw #F24E29;
+    text-decoration: none;
 }
-#acc:hover {
+#acc a:hover {
     color: #F2CB05;
+    text-decoration: underline;
 }
 
 /*BEAU*/
-#beau {
+#beau a {
     color: #f2cb05;
-    text-shadow: -0.2vw -0.1vw #656565;
+    text-shadow: -0.13vw -0.1vw #656565;
+    text-decoration: none;
 }
-#beau:hover {
+#beau a:hover {
     color: #F24E29;
+    text-decoration: underline;
 }
 
 /*ART*/
-#art {
+#art a {
     color: #F24E29;
-    text-shadow: -0.2vw -0.1vw #F2CB05;
+    text-shadow: -0.13vw -0.1vw #F2CB05;
+    text-decoration: none;
 }
-#art:hover {
+#art a:hover {
     color: #1CBFFF;
+    text-decoration: underline;
 }
 
+/*CONTACT*/
+.about_contactnav a{
+    font-size: 3.5vw;
+    font-family: 'cornerstoneregular';
+    padding-top: 3vw;
+}
+.about_contactbody {
+    padding-top: 17vw;
+    align-content: center;
+    font-family: 'cornerstoneregular';
+    text-align: center;
+}
