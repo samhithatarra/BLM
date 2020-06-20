@@ -458,7 +458,7 @@ nav a:hover{
 @media screen and (max-width: 850px){
     .vertical { 
         border-left: 0.5vw solid rgba(255,255,255,1); 
-        height: 87vw;
+        height: 90vw;
     }
     nav a{
         font-size: 3.5vw;
@@ -507,29 +507,29 @@ nav a:hover{
 
     #NEXT2 a{
         right: 1vw;
-        font-size: 40px;
-        padding-bottom: 40vw;
+        font-size: 8vw;
+        padding-bottom: 60vw;
     }
 
     #NEXT3 a{
         right: -4vw;
         font-size: 8vw;
-        padding-bottom: 40vw;
+        padding-bottom: 60vw;
     }
     #NEXT4 a{
         right: 6vw;
         font-size: 8vw;
-        padding-bottom: 40vw;
+        padding-bottom: 60vw;
     }
     #NEXT5 a{
         right: 10vw;
         font-size: 8vw;
-        padding-bottom: 40vw;
+        padding-bottom: 60vw;
     }
     #NEXT6 a{
         right: -1vw;
         font-size: 8vw;
-        padding-bottom: 40vw;
+        padding-bottom: 60vw;
     }
 
     #NEXT7 a{
