@@ -9,12 +9,14 @@
 html{
     background-color: black;
     scroll-behavior: smooth;
+    
 }
 nav{
     position: fixed;
     z-index: 99;
     padding-top: 3vw;
 }
+
 nav a{
     
     font-family: 'cornerstoneregular';
@@ -456,7 +458,7 @@ nav a:hover{
 @media screen and (max-width: 850px){
     .vertical { 
         border-left: 0.5vw solid rgba(255,255,255,1); 
-        height: 80vw;
+        height: 83vw;
     }
     nav a{
         font-size: 3.5vw;
@@ -499,34 +501,41 @@ nav a:hover{
     }
     #NEXT1 a{
         right: 35vw;
+        padding-bottom: 30vw;
         font-size: 8vw;
     }
 
     #NEXT2 a{
         right: 1vw;
         font-size: 40px;
+        padding-bottom: 20vw;
     }
 
     #NEXT3 a{
         right: -4vw;
         font-size: 8vw;
+        padding-bottom: 20vw;
     }
     #NEXT4 a{
-        right: 0vw;
+        right: 6vw;
         font-size: 8vw;
+        padding-bottom: 20vw;
     }
     #NEXT5 a{
-        right: 4vw;
+        right: 10vw;
         font-size: 8vw;
+        padding-bottom: 20vw;
     }
     #NEXT6 a{
         right: -1vw;
         font-size: 8vw;
+        padding-bottom: 20vw;
     }
 
     #NEXT7 a{
         right: 5vw;
         font-size: 8vw;
+        padding-bottom: 20vw;
     }
     #Group_1 {
         height: 800px;
