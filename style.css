@@ -458,7 +458,7 @@ nav a:hover{
 @media screen and (max-width: 850px){
     .vertical { 
         border-left: 0.5vw solid rgba(255,255,255,1); 
-        height: 90vw;
+        height: 95vw;
     }
     nav a{
         font-size: 3.5vw;
@@ -535,7 +535,7 @@ nav a:hover{
     #NEXT7 a{
         right: 5vw;
         font-size: 8vw;
-        padding-bottom: 40vw;
+        padding-bottom: 90vw;
     }
     #Group_1 {
         height: 800px;
