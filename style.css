@@ -38,7 +38,7 @@ nav a{
 
 .vertical { 
     border-left: 0.5vw solid rgba(255,255,255,1); 
-    height: 32vw; 
+    height: 38vw; 
     position:absolute; 
     left: 100%; 
     opacity: 80%;
@@ -52,9 +52,9 @@ nav a:hover{
     text-decoration: underline;
 }
 #FILTERBLACK{
-    padding-right: 100px;
+    padding-right: 120px;
     float: right;
-    padding-top:118px;
+    padding-top:180px;
     color: rgba(255,255,255,1);
     font-family: 'cornerstoneregular';
     font-size: 5vw;
@@ -62,19 +62,15 @@ nav a:hover{
     text-shadow: -0.4vw -0.3vw rgba(20,133,179,1);
 
 }
+div.picture1 {
+    width:100%; /*width of your image*/
+    height:1080px; /*height of your image*/
+    background-image:url('images/main_image.jpg');
+    margin:0; /* If you want no margin */
+    padding:0; /*if your want to padding */
+ }
 
-
-#background_img{
-    position: absolute;
-	overflow: visible;
-	width: auto;
-	height: 1080px;
-	left: 0px;
-	top: 0px;
-
-}
 #CONTACT a{
-
     color: rgba(255,255,255,1);
     font-family: 'cornerstoneregular';
     position: fixed;
@@ -84,6 +80,7 @@ nav a:hover{
     z-index: 99;
     text-decoration: none;
 }
+
 #CONTACT a:hover{
     color: rgba(20,133,179,1);
 }
@@ -170,6 +167,18 @@ nav a:hover{
 
 #NEXT7 a{
     color: rgba(242,78,41,1);
+    float: right;
+    font-family: 'cornerstoneregular';
+    position: absolute;
+    right: 22vw;
+    bottom: 25vw;
+    font-size: 3vw;
+    z-index: 99;
+    text-decoration: none;
+}
+
+#NEXT8 a{
+    color: #F2CB05;
     float: right;
     font-family: 'cornerstoneregular';
     position: absolute;
@@ -455,14 +464,55 @@ nav a:hover{
 
 }
 
+#Group_7 {
+	position: absolute;
+	width: auto;
+	height: 1080px;
+	left: 0px;
+	top: 7560px;
+    overflow: visible;
+}
+#Rectangle_7 {
+	fill: #1CBFFF;
+}
+#DONATE a{
+    top: 200px;
+    left: 50%;
+    position: relative;
+	white-space: nowrap;
+	text-align: center;
+	font-family: 'cornerstoneregular';
+    font-size: 9vw;
+	color: #F2CB05;
+    text-shadow: -0.4vw -0.3vw #B59704;
+    text-decoration: underline;
+
+}
+#DONATE a:hover{
+    color: black;
+}
+#DONATE p{
+
+	font-family: 'cornerstoneregular';
+    position: relative;
+    font-size: 2vw;
+    left: 50%;
+    top: 200px;
+    text-align: left;
+    word-wrap: break-word;
+    color: rgba(255,255,255,1);
+    /* display: block; */
+    /* word-wrap: break-word; */
+    max-width: 1000px;
+}
+
 @media screen and (max-width: 850px){
     .vertical { 
         border-left: 0.5vw solid rgba(255,255,255,1); 
-        height: 95vw;
+        height: 85vw;
     }
     nav a{
-        font-size: 3.5vw;
-        padding-left: 1vw;
+         padding-top: 20vw;
     }
 
     #FILTERBLACK{
@@ -491,6 +541,9 @@ nav a:hover{
     #DISCOVER_ART{
         padding-left: 6vw;
 
+    }
+    #DONATE{
+        padding-left: 6vw;
     }
 
     #CONTACT a{
@@ -537,6 +590,11 @@ nav a:hover{
         font-size: 8vw;
         padding-bottom: 65vw;
     }
+    #NEXT8 a{
+        right: 3vw;
+        font-size: 8vw;
+        padding-bottom: 65vw;
+    }
     #Group_1 {
         height: 800px;
         top: 800px;
@@ -566,6 +624,10 @@ nav a:hover{
         height: 800px;
         top: 4800px
     
+    }
+    #Group_7 {
+        height: 800px;
+        top: 5600px
     }
     
 

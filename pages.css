@@ -220,6 +220,18 @@ img {
     color: #1CBFFF;
     text-decoration: underline;
 }
+/*ART*/
+#don a {
+    color: black;
+    text-align: center;
+    text-shadow: -0.13vw -0.1vw #F2CB05;
+    text-decoration: none;
+    font-size: 2.2vw;
+}
+#don a:hover {
+    color: #1CBFFF;
+    text-decoration: underline;
+}
 
 /*CONTACT*/
 .about_contactnav a{
