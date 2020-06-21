@@ -68,7 +68,14 @@ div.picture1 {
     background-image:url('images/main_image.jpg');
     margin:0; /* If you want no margin */
     padding:0; /*if your want to padding */
- }
+}
+
+ #h2 {
+    font-family: 'cornerstoneregular';
+    font-size: 2vw;
+    color: blue;
+    padding-left: 1000px;
+}
 
 #CONTACT a{
     color: rgba(255,255,255,1);
@@ -509,14 +516,14 @@ div.picture1 {
 @media screen and (max-width: 850px){
     .vertical { 
         border-left: 0.5vw solid rgba(255,255,255,1); 
-        height: 85vw;
+        height: 95vw;
     }
     nav a{
          padding-top: 20vw;
     }
 
     #FILTERBLACK{
-        padding-right: 0vw;
+        padding-right: 6vw;
     }
     #SHOP_FASHION{
         padding-left: 8vw;
