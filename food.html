@@ -21,6 +21,24 @@
     </nav>
 </header>
 
+<!-- CODE FOR FILTERING FROM: https://www.tutorialrepublic.com/faq/show-hide-divs-based-on-dropdown-selection-in-jquery.php -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("select").change(function () {
+            $(this).find("option:selected").each(function () {
+                var optionValue = $(this).attr("value");
+                if (optionValue) {
+                    $(".box").not("." + optionValue).hide();
+                    $("." + optionValue).show();
+                } else {
+                    $(".box").hide();
+                }
+            });
+        }).change();
+    });
+</script>
+
 <body>
     <div class="BODYNAV" id="PAGETOP">
         <section id="tech_body_nav">
@@ -41,6 +59,13 @@
 
 
     <div class="wrapper">
+        <select>
+            <option>FILTER BY STATE</option>
+            <option value="CA">CALIFORNIA</option>
+            <option value="NY">NEW YORK</option>
+            <option value="TX">TEXAS</option>
+        </select>
+
         <h2 id="featured">FEATURED</h2>
         <div class="cards_wrap">
             <div class="card_item">
@@ -101,377 +126,481 @@
                     </div>
                 </div>
             </div>
+            <div class="card_item">
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://johnathanssandwichalameda.com/" target="_blank"
+                                        style="word-spacing: -0.30em">SANDWHICH HOUSE</a>
+                                </section>
+                                <p>
+                                    We are family owned and very active in the local community. We provide healthy
+                                    option
+                                    sandwhiches, soups, and salads. At Jonathan's your food is always made of
+                                    love<br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/Ly6ZVdY3qNCR7fJH9"
+                                    target="_blank"><br>ALAMEDA, CA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="NY box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://johnathanssandwichalameda.com/" target="_blank"
+                                        style="word-spacing: -0.30em">TESTING NEWYORK</a>
+                                </section>
+                                <p>
+                                    We are family owned and very active in the local community. We provide healthy
+                                    option
+                                    sandwhiches, soups, and salads. At Jonathan's your food is always made of
+                                    love<br><br><br>
+                                </p>
 
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="https://johnathanssandwichalameda.com/" target="_blank"
-                                    style="word-spacing: -0.30em">SANDWHICH HOUSE</a>
-                            </section>
-                            <p>
-                                We are family owned and very active in the local community. We provide healthy option sandwhiches, soups, and salads. At Jonathan's your food is always made of love<br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/Ly6ZVdY3qNCR7fJH9"
-                                target="_blank"><br>ALAMEDA, CA</a>
+                                <a class="location" href="https://goo.gl/maps/Ly6ZVdY3qNCR7fJH9"
+                                    target="_blank"><br>SOMETJING, NY</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="https://www.facebook.com/SpritzersCafe/" target="_blank"
-                                    style="word-spacing: -0.30em;">SPRITZER CAFE</a>
-                            </section>
-                            <p>
-                                "Nice place to meet up with folks to get some work done. They have a nice sitting area, plenty of tables, bathroom, WiFi and plenty of street parking. The staff was nice and the quiche was great..." @erika e:(yelp)<br><Br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/1iKXWiCjUU6J7WNY7"
-                                target="_blank"><br>ALAMEDA, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://www.facebook.com/SpritzersCafe/" target="_blank"
+                                        style="word-spacing: -0.30em;">SPRITZER CAFE</a>
+                                </section>
+                                <p>
+                                    "Nice place to meet up with folks to get some work done. They have a nice sitting
+                                    area,
+                                    plenty of tables, bathroom, WiFi and plenty of street parking. The staff was nice
+                                    and
+                                    the quiche was great..." @erika e:(yelp)<br><Br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/1iKXWiCjUU6J7WNY7"
+                                    target="_blank"><br>ALAMEDA, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="http://www.juanitaandmaude.com/" target="_blank"
-                                    style="word-spacing: -0.50em;">JUANITA & MAUDE</a>
-                            </section>
-                            <p>
-                                "The rest of the New American menu is all kinds of delicious cross-cultural fun, from grilled swordfish with green papaya to grilled portobellos with goat cheese and herb salsa."-mercurynews.com<br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/N5iXLDUFaEd2CFs38"
-                                target="_blank"><br>ALBANY, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="http://www.juanitaandmaude.com/" target="_blank"
+                                        style="word-spacing: -0.50em;">JUANITA & MAUDE</a>
+                                </section>
+                                <p>
+                                    "The rest of the New American menu is all kinds of delicious cross-cultural fun,
+                                    from
+                                    grilled swordfish with green papaya to grilled portobellos with goat cheese and herb
+                                    salsa."-mercurynews.com<br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/N5iXLDUFaEd2CFs38"
+                                    target="_blank"><br>ALBANY,
+                                    CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="https://www.yelp.com/biz/freddy-bs-bbq-antioch-2" target="_blank"
-                                    style="word-spacing: -0.30em;">FREDDY B'S BBQ</a>
-                            </section>
-                            <p>
-                                "My first bite into the Tri tip I almost melted! Thank Goodness I've found me a local BBQ spot with Down south taste. The baked beans full of flavor. Spaghetti was good.My Fiancé enjoyed the links, yams and Mac n cheese."-@Lisa B:(yelp)
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/9DdHiy7enkiMthh3A"
-                                target="_blank"><br>ANTIOCH, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://www.yelp.com/biz/freddy-bs-bbq-antioch-2"
+                                        target="_blank" style="word-spacing: -0.30em;">FREDDY B'S BBQ</a>
+                                </section>
+                                <p>
+                                    "My first bite into the Tri tip I almost melted! Thank Goodness I've found me a
+                                    local
+                                    BBQ spot with Down south taste. The baked beans full of flavor. Spaghetti was
+                                    good.My
+                                    Fiancé enjoyed the links, yams and Mac n cheese."-@Lisa B:(yelp)
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/9DdHiy7enkiMthh3A"
+                                    target="_blank"><br>ANTIOCH, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="https://www.solidrockcafe.us/home" target="_blank"
-                                    style="word-spacing: -0.30em;">SOLID ROCK CAFE</a>
-                            </section>
-                            <p>
-                                American, Southern, and Cajun food including Fried Chicken & All the Fixin’s, Burgers, Sandwiches, Soups, Salads Sides & Desserts.<br><br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/86do6tEx5rdg3wo57"
-                                target="_blank"><br>ANTIOCH, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://www.solidrockcafe.us/home" target="_blank"
+                                        style="word-spacing: -0.30em;">SOLID ROCK CAFE</a>
+                                </section>
+                                <p>
+                                    American, Southern, and Cajun food including Fried Chicken & All the Fixin’s,
+                                    Burgers,
+                                    Sandwiches, Soups, Salads Sides & Desserts.<br><br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/86do6tEx5rdg3wo57"
+                                    target="_blank"><br>ANTIOCH, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="https://southern-express.business.site/" target="_blank"
-                                    style="word-spacing: -0.30em;">SOUTHERN EXPRESS</a>
-                            </section>
-                            <p>
-                                All side are made from scratch, Fresh Collard Greens, Yams, Steamed Cabbage, Hand Mashed Potatoes and so much more . Made From Scratch and all for $1.00 each.<br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/sUWEnYg2GTuo8kCi6"
-                                target="_blank"><br>ANTIOCH, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://southern-express.business.site/" target="_blank"
+                                        style="word-spacing: -0.30em;">SOUTHERN EXPRESS</a>
+                                </section>
+                                <p>
+                                    All side are made from scratch, Fresh Collard Greens, Yams, Steamed Cabbage, Hand
+                                    Mashed
+                                    Potatoes and so much more . Made From Scratch and all for $1.00 each.<br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/sUWEnYg2GTuo8kCi6"
+                                    target="_blank"><br>ANTIOCH, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="https://www.minniebellssoul.com/" target="_blank"
-                                    style="word-spacing: -0.30em;">MINNIE BELL'S</a>
-                            </section>
-                            <p>
-                                Using traditional family recipes, Minnie Bell’s menu offers up delicious home-style food, combining soulful flavors and warmth of the south.<br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/unduwcTBobj34uLp9"
-                                target="_blank"><br>EMERYVILLE, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://www.minniebellssoul.com/" target="_blank"
+                                        style="word-spacing: -0.30em;">MINNIE BELL'S</a>
+                                </section>
+                                <p>
+                                    Using traditional family recipes, Minnie Bell’s menu offers up delicious home-style
+                                    food, combining soulful flavors and warmth of the south.<br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/unduwcTBobj34uLp9"
+                                    target="_blank"><br>EMERYVILLE, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="http://revebistro.com/" target="_blank"
-                                    style="word-spacing: -0.30em;">REVE BISTRO</a>
-                            </section>
-                            <p>
-                                Chic French eatery with upscale bistro classics & wines in an interior that channels
-                                European style.<br><br><br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/unduwcTBobj34uLp9"
-                                target="_blank"><br>LAFAYETTE, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="http://revebistro.com/" target="_blank"
+                                        style="word-spacing: -0.30em;">REVE BISTRO</a>
+                                </section>
+                                <p>
+                                    Chic French eatery with upscale bistro classics & wines in an interior that channels
+                                    European style.<br><br><br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/unduwcTBobj34uLp9"
+                                    target="_blank"><br>LAFAYETTE, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="https://backayard.net/" target="_blank"
-                                    style="word-spacing: -0.30em;">BACKAYARD</a>
-                            </section>
-                            <p>
-                                Come visit us and try our signature Jerk Chicken & Beef Oxtail Plate...Curried Goat,
-                                Barbeque Spareribs, Vegetarian Jerk Tofu and Coconut Curried Tofu and freshly made
-                                Caribbean Cobb Salad with Jerk Chicken or Salmon.
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/a6u2uJyVBUJ1zUYo7" target="_blank"><br>MENLO
-                                PARK, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://backayard.net/" target="_blank"
+                                        style="word-spacing: -0.30em;">BACKAYARD</a>
+                                </section>
+                                <p>
+                                    Come visit us and try our signature Jerk Chicken & Beef Oxtail Plate...Curried Goat,
+                                    Barbeque Spareribs, Vegetarian Jerk Tofu and Coconut Curried Tofu and freshly made
+                                    Caribbean Cobb Salad with Jerk Chicken or Salmon.
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/a6u2uJyVBUJ1zUYo7"
+                                    target="_blank"><br>MENLO
+                                    PARK, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="http://www.brownsugarkitchen.com/" target="_blank"
-                                    style="word-spacing: -0.30em;">BROWN SUGAR</a>
-                            </section>
-                            <p>
-                                Tanya Holland offers California-influenced soul food & Southern eats in comfortable
-                                surrounds.<br><br><br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/gjsYaG9rk69ZRiAh8"
-                                target="_blank"><br>OAKLAND, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="http://www.brownsugarkitchen.com/" target="_blank"
+                                        style="word-spacing: -0.30em;">BROWN SUGAR</a>
+                                </section>
+                                <p>
+                                    Tanya Holland offers California-influenced soul food & Southern eats in comfortable
+                                    surrounds.<br><br><br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/gjsYaG9rk69ZRiAh8"
+                                    target="_blank"><br>OAKLAND, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="https://www.hornbarbecue.com/" target="_blank"
-                                    style="word-spacing: -0.30em;">HORD BBQ</a>
-                            </section>
-                            <p>
-                                Horn Barbecue is an underground meat smoking concept that was founded by Pitmaster Matt
-                                Horn, in 2015. Serving craft Barbecue with a southern influence.<br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/r5yX83Jjo3evq85Y9"
-                                target="_blank"><br>OAKLAND, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://www.hornbarbecue.com/" target="_blank"
+                                        style="word-spacing: -0.30em;">HORD BBQ</a>
+                                </section>
+                                <p>
+                                    Horn Barbecue is an underground meat smoking concept that was founded by Pitmaster
+                                    Matt
+                                    Horn, in 2015. Serving craft Barbecue with a southern influence.<br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/r5yX83Jjo3evq85Y9"
+                                    target="_blank"><br>OAKLAND, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="https://amaweles.com/" target="_blank"
-                                    style="word-spacing: -0.30em;">AMAWELE'S</a>
-                            </section>
-                            <p>
-                                Casual take-out stop with food-court seats for from-scratch South African fare with
-                                eclectic flair.<br><br><br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/1xNDZ2MJSgW7vQHe8" target="_blank"><br>SAN
-                                FRANCISCO, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://amaweles.com/" target="_blank"
+                                        style="word-spacing: -0.30em;">AMAWELE'S</a>
+                                </section>
+                                <p>
+                                    Casual take-out stop with food-court seats for from-scratch South African fare with
+                                    eclectic flair.<br><br><br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/1xNDZ2MJSgW7vQHe8" target="_blank"><br>SAN
+                                    FRANCISCO, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="https://www.yelp.com/biz/frisco-fried-san-francisco"
-                                    target="_blank" style="word-spacing: -0.30em;">FRISCO FRIED</a>
-                            </section>
-                            <p>
-                                Casual, family-owned soul food restaurant specializing in fried chicken, seafood &
-                                burger dogs.<br><br><br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/JBweLenZyZYe2F4v9" target="_blank"><br>SAN
-                                FRANCISCO, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://www.yelp.com/biz/frisco-fried-san-francisco"
+                                        target="_blank" style="word-spacing: -0.30em;">FRISCO FRIED</a>
+                                </section>
+                                <p>
+                                    Casual, family-owned soul food restaurant specializing in fried chicken, seafood &
+                                    burger dogs.<br><br><br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/JBweLenZyZYe2F4v9" target="_blank"><br>SAN
+                                    FRANCISCO, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="https://www.islavidasf.com/"
-                                    target="_blank" style="word-spacing: -0.30em;">ISLA VIDA</a>
-                            </section>
-                            <p>
-                                Isla Vida is the culture, story, and lifestyle of the Caribbean through
-                                food.<br><br><br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/ftRqrz6CCoKXsKct9" target="_blank"><br>SAN
-                                FRANCISCO, CA</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="http://www.littleskilletsf.com" target="_blank"
-                                    style="word-spacing: -0.30em;">LITTLE SKILLET</a>
-                            </section>
-                            <p>
-                                Classic chicken & waffles, specialty cocktails & a jazz brunch contribute to this spot's
-                                hip vibe.<br><br><br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/NtcaBMVrugGpCRJTA" target="_blank"><br>SAN
-                                FRANCISCO, CA</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="http://www.thefillmoredistrict.com/dss_pages/dss_miyako.html"
-                                    target="_blank" style="word-spacing: -0.50em;">MIYAKO ICE CREAM</a>
-                            </section>
-                            <p>
-                                Locally made old fashion ice cream in a large selection of flavors alongside candy found
-                                in rows of jars displayed on the wall...also makes a variety of sandwiches on the
-                                premises, along with hot dogs...<br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/wCBy8XTgHx3Qkeh87" target="_blank"><br>SAN
-                                FRANCISCO, CA</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="http://www.yvonnessouthernsweets.com/"
-                                    target="_blank" style="word-spacing: -0.50em;">YVONNE'S SWEET</a>
-                            </section>
-                            <p>
-                                Yvonne began making her pralines and expanded her offerings to include other specialty desserts such as ol’ school butter cookies, sweet potato pies, peach cobblers, and cakes for small parties and social gatherings...
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/biHa2E5mUTju6xN28" target="_blank"><br>SAN
-                                FRANCISCO, CA</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="http://waliaethiopian.com/" target="_blank"
-                                    style="word-spacing: -0.50em;">WALIA ETHIOPIAN</a>
-                            </section>
-                            <p>
-                                Our goal is to provide a high quality Ethiopian food to the San Jose community and nearby cities... Our menu reflects eclectic Ethiopian foods and numerous species that are unique to Ethiopia.<br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/ZYhNPAcpFDktnCSeA" target="_blank"><br>SAN
-                                JOSE, CA</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="http://zeniethiopianrestaurant.com/" target="_blank"
-                                    style="word-spacing: -0.30em;">ZENI</a>
-                            </section>
-                            <p>
-                                Adventurous diners sit on the floor & eat with their hands at this colorful Ethiopian
-                                spot.<br><br><br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/N4vGecpV8ymBzHJA9" target="_blank"><br>SAN
-                                JOSE, CA</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="http://kendejahrestaurant.com/" target="_blank"
-                                    style="word-spacing: -0.30em;">KENDEJAH</a>
-                            </section>
-                            <p>
-                                A menu of traditional Liberian meat, seafood & vegetarian dishes with colorful wall
-                                murals & art.<br><br><br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/uwDPqsaNjVDzNXoK8" target="_blank"><br>SAN
-                                LEANDRO, CA</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_bottom">
-                        <div class="card_info">
-                            <section id="food">
-                                <a class="title" href="http://poorboyskitchen.com/" target="_blank"
-                                    style="word-spacing: -0.30em;">POORBOY'S</a>
-                            </section>
-                            <p>
-                                Casual restaurant specializing in Cajun & Creole classics including seafood boils & po' boys.<br><br><br><br><br>
-                            </p>
-                            <a class="location" href="https://goo.gl/maps/x2UXhDqg7JTjt3W48" target="_blank"><br>SANTA CLARA, CA</a>
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="https://www.islavidasf.com/" target="_blank"
+                                        style="word-spacing: -0.30em;">ISLA VIDA</a>
+                                </section>
+                                <p>
+                                    Isla Vida is the culture, story, and lifestyle of the Caribbean through
+                                    food.<br><br><br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/ftRqrz6CCoKXsKct9" target="_blank"><br>SAN
+                                    FRANCISCO, CA</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="card_item">
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="http://www.littleskilletsf.com" target="_blank"
+                                        style="word-spacing: -0.30em;">LITTLE SKILLET</a>
+                                </section>
+                                <p>
+                                    Classic chicken & waffles, specialty cocktails & a jazz brunch contribute to this
+                                    spot's
+                                    hip vibe.<br><br><br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/NtcaBMVrugGpCRJTA" target="_blank"><br>SAN
+                                    FRANCISCO, CA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_item">
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="http://www.thefillmoredistrict.com/dss_pages/dss_miyako.html"
+                                        target="_blank" style="word-spacing: -0.50em;">MIYAKO ICE CREAM</a>
+                                </section>
+                                <p>
+                                    Locally made old fashion ice cream in a large selection of flavors alongside candy
+                                    found
+                                    in rows of jars displayed on the wall...also makes a variety of sandwiches on the
+                                    premises, along with hot dogs...<br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/wCBy8XTgHx3Qkeh87" target="_blank"><br>SAN
+                                    FRANCISCO, CA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_item">
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="http://www.yvonnessouthernsweets.com/" target="_blank"
+                                        style="word-spacing: -0.50em;">YVONNE'S SWEET</a>
+                                </section>
+                                <p>
+                                    Yvonne began making her pralines and expanded her offerings to include other
+                                    specialty
+                                    desserts such as ol’ school butter cookies, sweet potato pies, peach cobblers, and
+                                    cakes
+                                    for small parties and social gatherings...
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/biHa2E5mUTju6xN28" target="_blank"><br>SAN
+                                    FRANCISCO, CA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="http://waliaethiopian.com/" target="_blank"
+                                        style="word-spacing: -0.50em;">WALIA ETHIOPIAN</a>
+                                </section>
+                                <p>
+                                    Our goal is to provide a high quality Ethiopian food to the San Jose community and
+                                    nearby cities... Our menu reflects eclectic Ethiopian foods and numerous species
+                                    that
+                                    are unique to Ethiopia.<br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/ZYhNPAcpFDktnCSeA" target="_blank"><br>SAN
+                                    JOSE, CA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_item">
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="http://zeniethiopianrestaurant.com/" target="_blank"
+                                        style="word-spacing: -0.30em;">ZENI</a>
+                                </section>
+                                <p>
+                                    Adventurous diners sit on the floor & eat with their hands at this colorful
+                                    Ethiopian
+                                    spot.<br><br><br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/N4vGecpV8ymBzHJA9" target="_blank"><br>SAN
+                                    JOSE, CA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card_item">
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="http://kendejahrestaurant.com/" target="_blank"
+                                        style="word-spacing: -0.30em;">KENDEJAH</a>
+                                </section>
+                                <p>
+                                    A menu of traditional Liberian meat, seafood & vegetarian dishes with colorful wall
+                                    murals & art.<br><br><br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/uwDPqsaNjVDzNXoK8" target="_blank"><br>SAN
+                                    LEANDRO, CA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card_item">
+                <div class="CA box">
+                    <div class="card_inner">
+                        <div class="card_bottom">
+                            <div class="card_info">
+                                <section id="food">
+                                    <a class="title" href="http://poorboyskitchen.com/" target="_blank"
+                                        style="word-spacing: -0.30em;">POORBOY'S</a>
+                                </section>
+                                <p>
+                                    Casual restaurant specializing in Cajun & Creole classics including seafood boils &
+                                    po'
+                                    boys.<br><br><br><br><br>
+                                </p>
+                                <a class="location" href="https://goo.gl/maps/x2UXhDqg7JTjt3W48"
+                                    target="_blank"><br>SANTA
+                                    CLARA, CA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 </body>
 
