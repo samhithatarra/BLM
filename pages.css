@@ -122,6 +122,10 @@ img {
 .location:hover{
     color: black;
 }
+select{
+    font-family: 'cornerstoneregular';
+    float: right;
+}
   
 @media (max-width: 1024px) {
     .cards_wrap .card_item {
