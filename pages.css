@@ -244,6 +244,7 @@ select{
 }
 .about_contactbody {
     padding-top: 17vw;
+    padding-bottom: 6vw;
     align-content: center;
     font-family: 'cornerstoneregular';
     text-align: center;
@@ -259,7 +260,7 @@ ul {
   }
 
   
-  @media (min-width: 500px) {
+@media (min-width: 500px) {
     ul {
       grid-auto-flow: column;
     }
