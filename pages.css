@@ -62,6 +62,7 @@ img {
     padding-right: 15%;
     padding-left: 15%;
     padding-top: 9vw;
+
 }
 .cards_wrap {
     display: flex;
@@ -224,7 +225,7 @@ select{
     color: #1CBFFF;
     text-decoration: underline;
 }
-/*ART*/
+/*DONATE*/
 #don a {
     color: black;
     text-align: center;
@@ -248,9 +249,13 @@ select{
     align-content: center;
     font-family: 'cornerstoneregular';
     text-align: center;
+    margin-bottom: 100px;
+
 }
 
-ul {
+
+
+#footer ul {
     display: inline-grid;
     grid-auto-flow: row;
     grid-gap: 24px;
@@ -261,33 +266,34 @@ ul {
 
   
 @media (min-width: 500px) {
-    ul {
+    #footer ul {
       grid-auto-flow: column;
     }
   }
   
-  a {
+#footer a {
     color: white;
     text-decoration: none;
     box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
   }
   
-  a:hover {
+#footer a:hover {
     box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
   }
   
-  li:last-child {
+#footer li:last-child {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    padding-top: 3px;
   }
   
-  li:hover ~ li p {
+#footer li:hover ~ li p {
     animation: wave-animation 0.3s infinite;
   }
   
   /* below is just for demo styling */
   
-  div {
+#footer {
     display: flex;
     height: 10vh;
     width: 100%;
