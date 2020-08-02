@@ -160,6 +160,11 @@ select{
     .location{
         font-size: 3vw;
     }
+
+    footer ul {
+        display: inline-grid;
+        grid-auto-flow: column;
+    }
 }
 
 /*FASH*/
