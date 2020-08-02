@@ -252,9 +252,6 @@ select{
     font-family: 'cornerstoneregular';
     text-align: center;
 }
-
-
-
 footer ul {
     display: inline-grid;
     grid-auto-flow: row;
@@ -294,7 +291,13 @@ footer li:hover ~ li p {
   /* below is just for demo styling */
   
 footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    right: 0;
     clear: both;
+    bottom: 0;
     display: flex;
     height: 10vh;
     width: 100%;
