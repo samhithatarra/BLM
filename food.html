@@ -22,17 +22,18 @@
 </header>
 
 <!-- CODE FOR FILTERING FROM: https://www.tutorialrepublic.com/faq/show-hide-divs-based-on-dropdown-selection-in-jquery.php -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script>
     $(document).ready(function () {
         $("select").change(function () {
             $(this).find("option:selected").each(function () {
                 var optionValue = $(this).attr("value");
                 if (optionValue) {
-                    $(".box").not("." + optionValue).hide();
-                    $("." + optionValue).show();
+                    $(".box").not("." + optionValue).css("display", "none");
+                    $("." + optionValue).css("display", "block");
                 } else {
-                    $(".box").hide();
+
+                    $(".box").css("display", "none");
                 }
             });
         }).change();
@@ -69,64 +70,75 @@
 
         <h2 id="featured">FEATURED</h2>
         <div class="cards_wrap">
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_top">
-                        <img src="images/tsion.jpg" alt="car" />
-                    </div>
-                    <div class="feat_info">
-                        <section id="food">
-                            <a class="title" href="https://tsioncafe.com/" target="_blank"
-                                style="word-spacing: -0.30em;">TSION CAFE</a>
-                        </section>
-                        <p>
-                            Once home to the famous Jimmy’s Chicken Shack club, Tsion Cafe has morphed delicious Ethiopian and Mediterranean inspired cuisines, International wine & beers, to fair trade Ethiopian coffees and teas, into a memorable speakeasy...
-                        </p>
-                        <a class="location" href="https://goo.gl/maps/kVF9hfhW7Ra8B1Ra7" target="_blank"><br>HARLEM, NY</a>
-                    </div>
-                </div>
-            </div>
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_top">
-                        <img src="images/backyard.png" alt="car" />
-                    </div>
-                    <div class="feat_info">
-                        <section id="food">
-                            <a class="title" href="https://backayard.net/" target="_blank"
-                                style="word-spacing: -0.30em;">BACKAYARD</a>
-                        </section>
-                        <p>
-                            Try our signature Jerk Chicken & Beef Oxtail Plate. Other favorites
-                            include our Curried Goat, Barbeque Spareribs, Vegetarian Jerk Tofu and Coconut Curried Tofu
-                            and freshly made Caribbean Cobb Salad with Jerk Chicken or Salmon.
-                        </p>
-                        <a class="location" href="https://goo.gl/maps/cvf7CqKgn6T4jncU9" target="_blank"><br>SAN
-                            JOSE, CA</a>
+            <div class="ALL box">
+                <div class="feat_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                            <img src="images/tsion.jpg" alt="car" />
+                        </div>
+                        <div class="feat_info">
+                            <section id="food">
+                                <a class="title" href="https://tsioncafe.com/" target="_blank"
+                                    style="word-spacing: -0.30em;">TSION CAFE</a>
+                            </section>
+                            <p>
+                                Once home to the famous Jimmy’s Chicken Shack club, Tsion Cafe has morphed delicious
+                                Ethiopian and Mediterranean inspired cuisines, International wine & beers, to fair trade
+                                Ethiopian coffees and teas, into a memorable speakeasy...
+                            </p>
+                            <a class="location" href="https://goo.gl/maps/kVF9hfhW7Ra8B1Ra7" target="_blank"><br>HARLEM,
+                                NY</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="card_inner">
-                    <div class="card_top">
-                        <img src="images/chickandwaf.png" alt="car" />
-                    </div>
-                    <div class="feat_info">
-                        <section id="food">
-                            <a class="title" href="https://www.homeofchickenandwaffles.com/" target="_blank"
-                                style="word-spacing: -0.50em;">CHICKEN&WAFFLES</a>
-                        </section>
-                        <p>
-                            Popular late-night eatery & bar known for its chicken & waffles, plus other soul-food
-                            staples.<br><br><br><br><br>
-                        </p>
-                        <a class="location" href="https://goo.gl/maps/ycP5HyuY2FNrHrWy6" target="_blank"><br>OAKLAND,
-                            CA</a>
+            <div class="ALL box">
+                <div class="feat_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                            <img src="images/backyard.png" alt="car" />
+                        </div>
+                        <div class="feat_info">
+                            <section id="food">
+                                <a class="title" href="https://backayard.net/" target="_blank"
+                                    style="word-spacing: -0.30em;">BACKAYARD</a>
+                            </section>
+                            <p>
+                                Try our signature Jerk Chicken & Beef Oxtail Plate. Other favorites
+                                include our Curried Goat, Barbeque Spareribs, Vegetarian Jerk Tofu and Coconut Curried
+                                Tofu
+                                and freshly made Caribbean Cobb Salad with Jerk Chicken or Salmon.
+                            </p>
+                            <a class="location" href="https://goo.gl/maps/cvf7CqKgn6T4jncU9" target="_blank"><br>SAN
+                                JOSE, CA</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="ALL box">
+                <div class="feat_item">
+                    <div class="card_inner">
+                        <div class="card_top">
+                            <img src="images/chickandwaf.png" alt="car" />
+                        </div>
+                        <div class="feat_info">
+                            <section id="food">
+                                <a class="title" href="https://www.homeofchickenandwaffles.com/" target="_blank"
+                                    style="word-spacing: -0.50em;">CHICKEN&WAFFLES</a>
+                            </section>
+                            <p>
+                                Popular late-night eatery & bar known for its chicken & waffles, plus other soul-food
+                                staples.<br><br><br><br><br>
+                            </p>
+                            <a class="location" href="https://goo.gl/maps/ycP5HyuY2FNrHrWy6"
+                                target="_blank"><br>OAKLAND,
+                                CA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -147,9 +159,9 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="card_item">
-                <div class="CA box ALL box">
+
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -171,8 +183,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -194,8 +206,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -217,8 +229,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -238,8 +250,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -259,8 +271,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -279,8 +291,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -289,7 +301,8 @@
                                         style="word-spacing: -0.50em;">BIG CHICKEN</a>
                                 </section>
                                 <p>
-                                    With taste at the forefront, Big Chicken delivers a menu that fuses home-cooked childhood favorites with bold new flavors.<br><br><br><br>
+                                    With taste at the forefront, Big Chicken delivers a menu that fuses home-cooked
+                                    childhood favorites with bold new flavors.<br><br><br><br>
                                 </p>
                                 <a class="location" href="https://g.page/Big-Chicken-glendale?share"
                                     target="_blank"><br>GLENDALE,
@@ -299,8 +312,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -309,7 +322,9 @@
                                         style="word-spacing: -0.50em;">SIP & SONDER</a>
                                 </section>
                                 <p>
-                                    Sip & Sonder is the premier destination for creatives, entrepreneurs, freelancers, curators, and everyone in between to simply exist, grab a cup of coffee, connect, create, and put sonder into action.<br><br>
+                                    Sip & Sonder is the premier destination for creatives, entrepreneurs, freelancers,
+                                    curators, and everyone in between to simply exist, grab a cup of coffee, connect,
+                                    create, and put sonder into action.<br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/K3a2buDjgFozgoaeA"
                                     target="_blank"><br>INGLEWOOD,
@@ -319,8 +334,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -339,8 +354,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -361,8 +376,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -381,8 +396,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -402,18 +417,19 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
                                 <section id="food">
-                                    <a class="title" href="https://www.suyaafricangrill.com/" target="_blank"
-         kls                               style="word-spacing: -0.30em;">SUYA GRILL</a>
+                                    <a class="title" href="https://www.suyaafricangrill.com/" target="_blank" kls
+                                        style="word-spacing: -0.30em;">SUYA GRILL</a>
                                 </section>
                                 <p>
-                                    Casual, lively nook preparing grilled meats & vegetables with West African & Caribbean
-                            seasonings.<br><br><br><br><br>
+                                    Casual, lively nook preparing grilled meats & vegetables with West African &
+                                    Caribbean
+                                    seasonings.<br><br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/Fx9ecGEwbpWsVEGv5"
                                     target="_blank"><br>OAKLAND, CA</a>
@@ -422,8 +438,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -442,8 +458,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -462,8 +478,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -483,8 +499,8 @@
                 </div>
             </div>
 
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -505,14 +521,15 @@
                 </div>
             </div>
 
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
                                 <section id="food">
                                     <a class="title" href="http://www.thefillmoredistrict.com/dss_pages/dss_miyako.html"
-                                        target="_blank" style="word-spacing: -0.60em; font-size: 2.1vw;">MIYAKO ICE CREAM</a>
+                                        target="_blank" style="word-spacing: -0.60em; font-size: 2.1vw;">MIYAKO ICE
+                                        CREAM</a>
                                 </section>
                                 <p>
                                     Locally made old fashion ice cream in a large selection of flavors alongside candy
@@ -528,8 +545,8 @@
                 </div>
             </div>
 
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -551,8 +568,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -574,8 +591,8 @@
                 </div>
             </div>
 
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -595,8 +612,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -616,8 +633,8 @@
                 </div>
             </div>
 
-            <div class="card_item">
-                <div class="CA box ALL box">
+            <div class="CA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -638,8 +655,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -648,34 +665,38 @@
                                         style="word-spacing: -0.30em;">BLACK NILE</a>
                                 </section>
                                 <p>
-                                    Seafood dishes & soul food whipped up in a narrow, brick- & wood-lined space with a laid-back vibe.<br><br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/soM3Lv5s6DVzaZCaA"
-                                    target="_blank"><br>BROOKLYN, NY</a>
+                                    Seafood dishes & soul food whipped up in a narrow, brick- & wood-lined space with a
+                                    laid-back vibe.<br><br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/soM3Lv5s6DVzaZCaA"
+                                        target="_blank"><br>BROOKLYN, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
                                 <section id="food">
-                                    <a class="title" href="https://www.yelp.com/biz/tings-jamaican-jerk-chicken-new-york" target="_blank"
-                                        style="word-spacing: -0.50em;">TINGS JAMAICAN</a>
+                                    <a class="title"
+                                        href="https://www.yelp.com/biz/tings-jamaican-jerk-chicken-new-york"
+                                        target="_blank" style="word-spacing: -0.50em;">TINGS JAMAICAN</a>
                                 </section>
                                 <p>
-                                    A small home style Jamaican kitchen serving jerk chicken, ox tail, patties, fresh juice & tings!<br><br><br><br><br>
+                                    A small home style Jamaican kitchen serving jerk chicken, ox tail, patties, fresh
+                                    juice & tings!<br><br><br><br><br>
                                 </p>
-                                <a class="location" href="https://goo.gl/maps/rUScygc3FgeU6dC17" target="_blank"><br>CHELSEA, NY</a>
+                                <a class="location" href="https://goo.gl/maps/rUScygc3FgeU6dC17"
+                                    target="_blank"><br>CHELSEA, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -684,7 +705,8 @@
                                         style="word-spacing: -0.30em;">MIKEY LIKES IT</a>
                                 </section>
                                 <p>
-                                    The pop-cultured inspired ice cream shop with locations in New York’s Lower East Side and Harlem.<br><br><br><br><br>
+                                    The pop-cultured inspired ice cream shop with locations in New York’s Lower East
+                                    Side and Harlem.<br><br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/Bw7QeKQuGX7KDnwm6"
                                     target="_blank"><br>EAST VILLAGE, NY</a>
@@ -693,8 +715,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -703,7 +725,8 @@
                                         style="word-spacing: -0.30em;">CHOP HOUSE</a>
                                 </section>
                                 <p>
-                                    Chic restaurant/bar offering American steakhouse fare, Chinese dumplings, Peking duck & more.<br><br><br><br><br>
+                                    Chic restaurant/bar offering American steakhouse fare, Chinese dumplings, Peking
+                                    duck & more.<br><br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/xRb2RLKtaHWHnT588"
                                     target="_blank"><br>FIDI, NY</a>
@@ -712,8 +735,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -722,7 +745,8 @@
                                         style="word-spacing: -0.30em;">ALIBI LOUNGE</a>
                                 </section>
                                 <p>
-                                    Chic nightspot offering specialty cocktails, wine, beer & snacks in modern surrounds.<br><br><br><br><br>
+                                    Chic nightspot offering specialty cocktails, wine, beer & snacks in modern
+                                    surrounds.<br><br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/3reP8wvsDCTwnBFC7"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -731,8 +755,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -741,7 +765,8 @@
                                         style="word-spacing: -0.30em;">BENYAM</a>
                                 </section>
                                 <p>
-                                    Traditional Ethiopian dishes & flavors in a casual setting with walls covered in modern art.<br><br><br><br><br>
+                                    Traditional Ethiopian dishes & flavors in a casual setting with walls covered in
+                                    modern art.<br><br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/rFQbhR1cYpvTk2Ku9"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -750,8 +775,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -760,7 +785,8 @@
                                         style="word-spacing: -0.30em;">BLVD BISTRO</a>
                                 </section>
                                 <p>
-                                    Classy bistro in a 1908 bungalow pairing locally-sourced Californian-inspired cuisine & wine.<br><br><br><br><br>
+                                    Classy bistro in a 1908 bungalow pairing locally-sourced Californian-inspired
+                                    cuisine & wine.<br><br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/xRb2RLKtaHWHnT588"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -769,17 +795,20 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
                                 <section id="food">
-                                    <a class="title" href="https://www.yelp.com/biz/charles-pan-fried-chicken-new-york-2" target="_blank"
-                                        style="word-spacing: -0.50em; font-size: 2.0vw;">CHAR. FRIED CHICKEN</a>
+                                    <a class="title"
+                                        href="https://www.yelp.com/biz/charles-pan-fried-chicken-new-york-2"
+                                        target="_blank" style="word-spacing: -0.50em; font-size: 2.0vw;">CHAR. FRIED
+                                        CHICKEN</a>
                                 </section>
                                 <p>
-                                    Harlem soul-food standard for old-school skillet-fried chicken served all-you-can-eat or with sides.<br><br><br><br><br>
+                                    Harlem soul-food standard for old-school skillet-fried chicken served
+                                    all-you-can-eat or with sides.<br><br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/8dDwd9qNmT4CP6LF9"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -788,8 +817,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -798,7 +827,9 @@
                                         style="word-spacing: -0.30em;">CHOCOLAT</a>
                                 </section>
                                 <p>
-                                    Features a menu of delicately updated soul food, American comfort and Southern food. Widely known as a popular Harlem brunch spot, our menu includes prime meats, fresh seafood, and our famous fried chicken...
+                                    Features a menu of delicately updated soul food, American comfort and Southern food.
+                                    Widely known as a popular Harlem brunch spot, our menu includes prime meats, fresh
+                                    seafood, and our famous fried chicken...
                                 </p>
                                 <a class="location" href="https://g.page/ChocolatHarlem?share"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -807,8 +838,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -817,7 +848,9 @@
                                         style="word-spacing: -0.30em;">THE EDGE</a>
                                 </section>
                                 <p>
-                                    It is known for its cozy rustic décor and creative food – reflecting the siblings British and Jamaican heritage, spiced up with a healthy dose of New York.<br><br><br>
+                                    It is known for its cozy rustic décor and creative food – reflecting the siblings
+                                    British and Jamaican heritage, spiced up with a healthy dose of New
+                                    York.<br><br><br>
                                 </p>
                                 <a class="location" href="https://g.page/theedgeharlem?share"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -826,8 +859,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -836,7 +869,9 @@
                                         style="word-spacing: -0.30em;">FIELD TRIP</a>
                                 </section>
                                 <p>
-                                    We use heirloom grains with each rice...All rice is freshly milled, unbleached and not enriched...Our rice bowls are paired with ethically sourced vegetables and proteins creating a flavorful experience...<br><br>
+                                    We use heirloom grains with each rice...All rice is freshly milled, unbleached and
+                                    not enriched...Our rice bowls are paired with ethically sourced vegetables and
+                                    proteins creating a flavorful experience...<br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/3bcvgr1yYQsSMQjy9"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -845,8 +880,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -855,7 +890,9 @@
                                         style="word-spacing: -0.30em;">HARLEM HOPS</a>
                                 </section>
                                 <p>
-                                    From frothy fresh drafts to chilly beers in bottles, we pride ourselves on working with the best local breweries to offer you a bespoke collection of niche, interesting & innovative beers to taste and explore.
+                                    From frothy fresh drafts to chilly beers in bottles, we pride ourselves on working
+                                    with the best local breweries to offer you a bespoke collection of niche,
+                                    interesting & innovative beers to taste and explore.
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/qhhJSHJjKUPd4F9i7"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -864,8 +901,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -874,7 +911,8 @@
                                         style="word-spacing: -0.30em;">HOME SWEET...</a>
                                 </section>
                                 <p>
-                                    We offer an eclectic American menu which highlights regional favorites that will comfort your heart and nourish your soul!<br><br><br><br>
+                                    We offer an eclectic American menu which highlights regional favorites that will
+                                    comfort your heart and nourish your soul!<br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/ngm3GeA5geXjyCj29"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -883,8 +921,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -893,7 +931,8 @@
                                         style="word-spacing: -0.30em;">KINGSTON</a>
                                 </section>
                                 <p>
-                                    Jamaican entrees dished up in a narrow, brick-space with modern accents, a full bar & tiny patio.<br><br><br><br><br>
+                                    Jamaican entrees dished up in a narrow, brick-space with modern accents, a full bar
+                                    & tiny patio.<br><br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/ofsFXftLx7jPkGRr5"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -902,8 +941,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -912,7 +951,9 @@
                                         style="word-spacing: -0.30em;">LEE LEE'S</a>
                                 </section>
                                 <p>
-                                    "This historic bakery on 118th Street is open for pick-up orders and city-wide delivery. To get yourself a big box of chocolate, apricot, or raspberry ruggalech"-theinfatuation.com<br><br>
+                                    "This historic bakery on 118th Street is open for pick-up orders and city-wide
+                                    delivery. To get yourself a big box of chocolate, apricot, or raspberry
+                                    ruggalech"-theinfatuation.com<br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/AUx6Ts6whdBHULoF8"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -921,8 +962,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -931,7 +972,8 @@
                                         style="word-spacing: -0.30em;">LOLO'S SEAFOOD</a>
                                 </section>
                                 <p>
-                                    Small counter-order place offering Caribbean-inspired fare including seafood steampots.<br><br><br><br><br>
+                                    Small counter-order place offering Caribbean-inspired fare including seafood
+                                    steampots.<br><br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/me4wpTYfahWUqj7A9"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -940,8 +982,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -950,7 +992,8 @@
                                         style="word-spacing: -0.30em;">MELBAS</a>
                                 </section>
                                 <p>
-                                    Southern classics served in a retro setting that's relaxed & homey by day, bustling in the evening.<br><br><br><br><br>
+                                    Southern classics served in a retro setting that's relaxed & homey by day, bustling
+                                    in the evening.<br><br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/m1W9kZh5GniPLbQj7"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -959,8 +1002,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -969,7 +1012,9 @@
                                         style="word-spacing: -0.50em;">67 ORANGE ST</a>
                                 </section>
                                 <p>
-                                    One of the first black-owned and operated bars in New York City. Williams transformed the 19th century speakeasy in Five Points - a neighborhood notorious for crime and written off as a slum - into and immensely popular and vibrant...
+                                    One of the first black-owned and operated bars in New York City. Williams
+                                    transformed the 19th century speakeasy in Five Points - a neighborhood notorious for
+                                    crime and written off as a slum - into and immensely popular and vibrant...
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/ShE2V5DZicTDVpV29"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -978,8 +1023,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -988,7 +1033,8 @@
                                         style="word-spacing: -0.30em;">PONTY BISTRO</a>
                                 </section>
                                 <p>
-                                    French & West African cuisine are served alongside house cocktails in a warm, dark-wood bistro.<br><br><br><br><br>
+                                    French & West African cuisine are served alongside house cocktails in a warm,
+                                    dark-wood bistro.<br><br><br><br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/unNg8WoJJicCyQA5A"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -997,8 +1043,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1007,7 +1053,9 @@
                                         style="word-spacing: -0.30em;">SUGAR HILL</a>
                                 </section>
                                 <p>
-                                    We serve handmade, small batch ice cream and non-dairy frozen desserts, with both seasonal and classic flavors available year around. Many of the available flavors are inspired by our Caribbean and Midwestern cultures...
+                                    We serve handmade, small batch ice cream and non-dairy frozen desserts, with both
+                                    seasonal and classic flavors available year around. Many of the available flavors
+                                    are inspired by our Caribbean and Midwestern cultures...
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/qtmCQhjEGTsY69QA9"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -1016,8 +1064,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1026,7 +1074,9 @@
                                         style="word-spacing: -0.30em;">SYLVIA'S</a>
                                 </section>
                                 <p>
-                                    Established in the historic village of Harlem, Sylvia’s is a community favorite, known as the world’s kitchen. Serving authentic soul food for over 55 years, this icon remains a culinary must-visit for foodies.<br><br>
+                                    Established in the historic village of Harlem, Sylvia’s is a community favorite,
+                                    known as the world’s kitchen. Serving authentic soul food for over 55 years, this
+                                    icon remains a culinary must-visit for foodies.<br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/j9dMkhaDPUUruEGJ6"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -1035,8 +1085,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1045,17 +1095,19 @@
                                         style="word-spacing: -0.30em;">TERANGA</a>
                                 </section>
                                 <p>
-                                    Rooted in traditional African home cooking that emphasizes African-grown ingredients, Teranga is a culinary journey into the depth, diversity, and deliciousness that the motherland has to offer.<br><br>
+                                    Rooted in traditional African home cooking that emphasizes African-grown
+                                    ingredients, Teranga is a culinary journey into the depth, diversity, and
+                                    deliciousness that the motherland has to offer.<br><br>
                                 </p>
-                                <a class="location" href="https://g.page/itsteranga?share"
-                                    target="_blank"><br>HARLEM, NY</a>
+                                <a class="location" href="https://g.page/itsteranga?share" target="_blank"><br>HARLEM,
+                                    NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1064,7 +1116,9 @@
                                         style="word-spacing: -0.30em;">MINTONS</a>
                                 </section>
                                 <p>
-                                    Where the foundations of modern jazz were established. Founded in 1938 by the saxophonist Henry Minton (from whom the establishment took its name) Minton’s Playhouse became, over the next decade, the setting...
+                                    Where the foundations of modern jazz were established. Founded in 1938 by the
+                                    saxophonist Henry Minton (from whom the establishment took its name) Minton’s
+                                    Playhouse became, over the next decade, the setting...
 
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/6tSR4yBGBLtWFSQu9"
@@ -1074,8 +1128,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1084,7 +1138,9 @@
                                         style="word-spacing: -0.30em;">REVERENCE</a>
                                 </section>
                                 <p>
-                                    "Reverence in Harlem has rotating, three-course bento boxes for pick-up. They’re only available on weekends, and you can pre-order yours through their website."-theinfatuation.com<br><br>
+                                    "Reverence in Harlem has rotating, three-course bento boxes for pick-up. They’re
+                                    only available on weekends, and you can pre-order yours through their
+                                    website."-theinfatuation.com<br><br>
                                 </p>
                                 <a class="location" href="https://goo.gl/maps/fwHbYZZ2qHsGX68y8"
                                     target="_blank"><br>HARLEM, NY</a>
@@ -1093,8 +1149,8 @@
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1103,16 +1159,18 @@
                                         style="word-spacing: -0.30em;">SISTERS</a>
                                 </section>
                                 <p>
-                                    If you want a culinary tour of the Caribbean without leaving Manhattan, make your way to Sisters Caribbean Cuisine and sample a variety of island eats...Jamaica to Trinidad to Guyana then the South.<br>
-                                <a class="location" href="https://goo.gl/maps/fwHbYZZ2qHsGX68y8"
-                                    target="_blank"><br>HARLEM, NY</a>
+                                    If you want a culinary tour of the Caribbean without leaving Manhattan, make your
+                                    way to Sisters Caribbean Cuisine and sample a variety of island eats...Jamaica to
+                                    Trinidad to Guyana then the South.<br>
+                                    <a class="location" href="https://goo.gl/maps/fwHbYZZ2qHsGX68y8"
+                                        target="_blank"><br>HARLEM, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1121,16 +1179,17 @@
                                         style="word-spacing: -0.30em;">CASA DEL TORO</a>
                                 </section>
                                 <p>
-                                    An array of classic Mexican dishes & cocktails in a modern bar setting with red interior details.<br><br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/C8WtWTXTzEPrpxXa9"
-                                    target="_blank"><br>HELL'S KITCHEN, NY</a>
+                                    An array of classic Mexican dishes & cocktails in a modern bar setting with red
+                                    interior details.<br><br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/C8WtWTXTzEPrpxXa9"
+                                        target="_blank"><br>HELL'S KITCHEN, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1139,16 +1198,17 @@
                                         style="word-spacing: -0.40em; font-size: 2.2vw;">FRESH FROM HELL</a>
                                 </section>
                                 <p>
-                                    Health-minded nook doling out counter-serve sandwiches, soups & salads alongside juices & smoothies.<br><br><br><br><br>
-                                <a class="location" href="https://g.page/freshfromhell?share"
-                                    target="_blank"><br>HELL'S KITCHEN, NY</a>
+                                    Health-minded nook doling out counter-serve sandwiches, soups & salads alongside
+                                    juices & smoothies.<br><br><br><br><br>
+                                    <a class="location" href="https://g.page/freshfromhell?share"
+                                        target="_blank"><br>HELL'S KITCHEN, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1157,16 +1217,17 @@
                                         style="word-spacing: -0.30em;">SHEBA</a>
                                 </section>
                                 <p>
-                                    Spicy stews made from family recipes & eaten by hand with flat bread are served amid African decor.<br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/pgneKM8yLAm3stqb7"
-                                    target="_blank"><br>HELL'S KITCHEN, NY</a>
+                                    Spicy stews made from family recipes & eaten by hand with flat bread are served amid
+                                    African decor.<br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/pgneKM8yLAm3stqb7"
+                                        target="_blank"><br>HELL'S KITCHEN, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1175,16 +1236,17 @@
                                         style="word-spacing: -0.30em;">LE SOLEIL</a>
                                 </section>
                                 <p>
-                                    Low-key establishment serving up African & Caribbean eats with an emphasis on Haitian fare.<br><br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/Vq1Dzo6Q13meqpYE9"
-                                    target="_blank"><br>HELL'S KITCHEN, NY</a>
+                                    Low-key establishment serving up African & Caribbean eats with an emphasis on
+                                    Haitian fare.<br><br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/Vq1Dzo6Q13meqpYE9"
+                                        target="_blank"><br>HELL'S KITCHEN, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1193,16 +1255,17 @@
                                         style="word-spacing: -0.30em;">LAS LAP</a>
                                 </section>
                                 <p>
-                                    Unique cocktails & bar bites such as arepas & oxtail rice bowls served in intimate surrounds.<br><br><br><br><br>
-                                <a class="location" href="https://g.page/laslapnyc?share"
-                                    target="_blank"><br>LOWER EAST SIDE, NY</a>
+                                    Unique cocktails & bar bites such as arepas & oxtail rice bowls served in intimate
+                                    surrounds.<br><br><br><br><br>
+                                    <a class="location" href="https://g.page/laslapnyc?share" target="_blank"><br>LOWER
+                                        EAST SIDE, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1211,16 +1274,17 @@
                                         style="word-spacing: -0.30em;">SCARRS PIZZA</a>
                                 </section>
                                 <p>
-                                    Pizzeria with retro looks serving pies, slices & subs made with modern ingredients.<br><br><br><br><br>
-                                <a class="location" href="https://g.page/ScarrsPizza?share"
-                                    target="_blank"><br>LOWER EAST SIDE, NY</a>
+                                    Pizzeria with retro looks serving pies, slices & subs made with modern
+                                    ingredients.<br><br><br><br><br>
+                                    <a class="location" href="https://g.page/ScarrsPizza?share"
+                                        target="_blank"><br>LOWER EAST SIDE, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1229,16 +1293,18 @@
                                         style="word-spacing: -0.30em;">WHIPPED</a>
                                 </section>
                                 <p>
-                                    We are a minority and women-owned award winning company that focuses on putting innovative spins on classic desserts. Each of our carefully crafted desserts are free of artificial flavors, colors and preservatives.<br>
-                                <a class="location" href="https://g.page/ScarrsPizza?share"
-                                    target="_blank"><br>LOWER EAST SIDE, NY</a>
+                                    We are a minority and women-owned award winning company that focuses on putting
+                                    innovative spins on classic desserts. Each of our carefully crafted desserts are
+                                    free of artificial flavors, colors and preservatives.<br>
+                                    <a class="location" href="https://g.page/ScarrsPizza?share"
+                                        target="_blank"><br>LOWER EAST SIDE, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1247,16 +1313,18 @@
                                         style="word-spacing: -0.30em;">THE BUN HUT</a>
                                 </section>
                                 <p>
-                                    Asian-Caribbean fusion dishes, unique, flavorful and delicious...We offer traditional Caribbean dishes on bao buns, roti wraps, and entrees. We have delicious sides, signature sauces, home made juices, and decadent island desserts.<br>
-                                <a class="location" href="https://g.page/TheBunHut23?share"
-                                    target="_blank"><br>LOWER EAST SIDE, NY</a>
+                                    Asian-Caribbean fusion dishes, unique, flavorful and delicious...We offer
+                                    traditional Caribbean dishes on bao buns, roti wraps, and entrees. We have delicious
+                                    sides, signature sauces, home made juices, and decadent island desserts.<br>
+                                    <a class="location" href="https://g.page/TheBunHut23?share"
+                                        target="_blank"><br>LOWER EAST SIDE, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1265,16 +1333,17 @@
                                         style="word-spacing: -0.30em;">BODEGA 88</a>
                                 </section>
                                 <p>
-                                    Urban sports pub offering Latin-inspired small plates & weekend brunch along with sangria & mojitos.<br><br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/6rR6RiFhkWvUo7Fs7"
-                                    target="_blank"><br>UPPER WEST SIDE, NY</a>
+                                    Urban sports pub offering Latin-inspired small plates & weekend brunch along with
+                                    sangria & mojitos.<br><br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/6rR6RiFhkWvUo7Fs7"
+                                        target="_blank"><br>UPPER WEST SIDE, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1283,16 +1352,18 @@
                                         style="word-spacing: -0.30em;">UPTOWN POKE</a>
                                 </section>
                                 <p>
-                                    100% fresh and healthy ingredients to our customers every day...Uptown Poké is a restaurant in the Upper West Side that is serving Hawaiian fusion style poké bowls, food and drinks.<br><br>
-                                <a class="location" href="https://g.page/uptownpokenyc?share"
-                                    target="_blank"><br>UPPER WEST SIDE, NY</a>
+                                    100% fresh and healthy ingredients to our customers every day...Uptown Poké is a
+                                    restaurant in the Upper West Side that is serving Hawaiian fusion style poké bowls,
+                                    food and drinks.<br><br>
+                                    <a class="location" href="https://g.page/uptownpokenyc?share"
+                                        target="_blank"><br>UPPER WEST SIDE, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="NY box ALL box">
+            <div class="NY box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1301,16 +1372,18 @@
                                         style="word-spacing: -0.30em;">AWASH</a>
                                 </section>
                                 <p>
-                                    Using traditional cooking techniques and motivated by the lack of Ethiopian representation in New York’s restaurant scene, we brought features from the realm of dining in Ethiopia to the busy streets of the Empire State.<br> 
-                                <a class="location" href="https://goo.gl/maps/CK9XnT6HuLL4WpQh8"
-                                    target="_blank"><br>UPPER WEST SIDE, NY</a>
+                                    Using traditional cooking techniques and motivated by the lack of Ethiopian
+                                    representation in New York’s restaurant scene, we brought features from the realm of
+                                    dining in Ethiopia to the busy streets of the Empire State.<br>
+                                    <a class="location" href="https://goo.gl/maps/CK9XnT6HuLL4WpQh8"
+                                        target="_blank"><br>UPPER WEST SIDE, NY</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1319,16 +1392,18 @@
                                         style="word-spacing: -0.30em;">SAM'S BBQ</a>
                                 </section>
                                 <p>
-                                    Sam’s Bar-B-Que specializes in all types of meat; from traditional brisket, ribs, mutton, and chicken to side-dish options of baked beans and potato salad, Sam’s Bar-B-Que joint offers home-cooked style meals for all appetites.<br>
-                                <a class="location" href="https://goo.gl/maps/P5aWBjoUKAA4eKgS7"
-                                    target="_blank"><br>AUSTIN, TX</a>
+                                    Sam’s Bar-B-Que specializes in all types of meat; from traditional brisket, ribs,
+                                    mutton, and chicken to side-dish options of baked beans and potato salad, Sam’s
+                                    Bar-B-Que joint offers home-cooked style meals for all appetites.<br>
+                                    <a class="location" href="https://goo.gl/maps/P5aWBjoUKAA4eKgS7"
+                                        target="_blank"><br>AUSTIN, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1337,52 +1412,59 @@
                                         style="word-spacing: -0.30em;">BURGERLICIOUS</a>
                                 </section>
                                 <p>
-                                    "Burgerlicious is a food truck parked at Skull Mechanix Brewery serving gourmet burgers like the shroom swiss with a 1/3 lb all-beef patty with swiss cheese, grilled mushrooms, and grilled onions or the greek burger with 1/3 lb all beef patty..."-atasteofkoko.com
-                                <a class="location" href="https://g.page/burgerliciousatx?share"
-                                    target="_blank"><br>AUSTIN, TX</a>
+                                    "Burgerlicious is a food truck parked at Skull Mechanix Brewery serving gourmet
+                                    burgers like the shroom swiss with a 1/3 lb all-beef patty with swiss cheese,
+                                    grilled mushrooms, and grilled onions or the greek burger with 1/3 lb all beef
+                                    patty..."-atasteofkoko.com
+                                    <a class="location" href="https://g.page/burgerliciousatx?share"
+                                        target="_blank"><br>AUSTIN, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
                                 <section id="food">
-                                    <a class="title" href="https://www.yelp.com/biz/browns-bar-b-que-austin" target="_blank"
-                                        style="word-spacing: -0.30em;">BROWN'S BBQ</a>
+                                    <a class="title" href="https://www.yelp.com/biz/browns-bar-b-que-austin"
+                                        target="_blank" style="word-spacing: -0.30em;">BROWN'S BBQ</a>
                                 </section>
                                 <p>
-                                    "Barbecue trailer parked next to Corner Bar on South Lamar."-atasteofkoko.com<br><br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/bisYVUe9BEcSTCPa9"
-                                    target="_blank"><br>AUSTIN, TX</a>
+                                    "Barbecue trailer parked next to Corner Bar on South
+                                    Lamar."-atasteofkoko.com<br><br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/bisYVUe9BEcSTCPa9"
+                                        target="_blank"><br>AUSTIN, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
                                 <section id="food">
-                                    <a class="title" href="https://www.yelp.com/biz/new-awlins-cafe-austin" target="_blank"
-                                        style="word-spacing: -0.40em; font-size: 2.2vw;">NEW AWLINS CAFE</a>
+                                    <a class="title" href="https://www.yelp.com/biz/new-awlins-cafe-austin"
+                                        target="_blank" style="word-spacing: -0.40em; font-size: 2.2vw;">NEW AWLINS
+                                        CAFE</a>
                                 </section>
                                 <p>
-                                    "Hidden inside this strip mall is New Awlins Cafe, an authentic Cajun Cafe with boudin balls, gumbo, crawfish etouffee, jambalaya, po boys, Cajun fish, fried crawfish, fried oysters, and more"-atasteofkoko.com<br><br>
-                                <a class="location" href="https://goo.gl/maps/KcW534MXADdpJ9Wp6"
-                                    target="_blank"><br>AUSTIN, TX</a>
+                                    "Hidden inside this strip mall is New Awlins Cafe, an authentic Cajun Cafe with
+                                    boudin balls, gumbo, crawfish etouffee, jambalaya, po boys, Cajun fish, fried
+                                    crawfish, fried oysters, and more"-atasteofkoko.com<br><br>
+                                    <a class="location" href="https://goo.gl/maps/KcW534MXADdpJ9Wp6"
+                                        target="_blank"><br>AUSTIN, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1391,16 +1473,18 @@
                                         style="word-spacing: -0.30em;">GOSSIP SHACK</a>
                                 </section>
                                 <p>
-                                    "Gossip Shack serves chicken and waffles, and chicken wings! You can pick flavors like CPR, ranch, garlic parmesan, ranch parmesan, cajun lemon pepper, and more."-atasteofkoko.com<br><br>
-                                <a class="location" href="https://g.page/GossipShack?share"
-                                    target="_blank"><br>AUSTIN, TX</a>
+                                    "Gossip Shack serves chicken and waffles, and chicken wings! You can pick flavors
+                                    like CPR, ranch, garlic parmesan, ranch parmesan, cajun lemon pepper, and
+                                    more."-atasteofkoko.com<br><br>
+                                    <a class="location" href="https://g.page/GossipShack?share"
+                                        target="_blank"><br>AUSTIN, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1409,16 +1493,18 @@
                                         style="word-spacing: -0.30em;">HABESHA</a>
                                 </section>
                                 <p>
-                                    Ethiopian cuisine is traditionally served on a large, thin, sourdough pancake called injera. Injera is a yeast-risen flatbread with a unique, slightly spongy texture, made from teff.<br><br>
-                                <a class="location" href="https://g.page/GossipShack?share"
-                                    target="_blank"><br>AUSTIN, TX</a>
+                                    Ethiopian cuisine is traditionally served on a large, thin, sourdough pancake called
+                                    injera. Injera is a yeast-risen flatbread with a unique, slightly spongy texture,
+                                    made from teff.<br><br>
+                                    <a class="location" href="https://g.page/GossipShack?share"
+                                        target="_blank"><br>AUSTIN, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1427,16 +1513,18 @@
                                         style="word-spacing: -0.30em;">HESTIA</a>
                                 </section>
                                 <p>
-                                    Snacks, small plates, and large format entrees allow an opportunity to explore and showcase techniques that highlight the role of fire in food. Hestia's chefs, in order to provide a deeper look into our food...<br><br>
-                                <a class="location" href="https://goo.gl/maps/4eAYCrxFZ5N86H8j7"
-                                    target="_blank"><br>AUSTIN, TX</a>
+                                    Snacks, small plates, and large format entrees allow an opportunity to explore and
+                                    showcase techniques that highlight the role of fire in food. Hestia's chefs, in
+                                    order to provide a deeper look into our food...<br><br>
+                                    <a class="location" href="https://goo.gl/maps/4eAYCrxFZ5N86H8j7"
+                                        target="_blank"><br>AUSTIN, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1445,16 +1533,18 @@
                                         style="word-spacing: -0.30em;">KALIMOTXO</a>
                                 </section>
                                 <p>
-                                    We celebrate the spirit of the Basque’s social bar culture with a curated Spanish wine list, amazing craft cocktails and flowing porrones. Enjoy our beautiful patio that overlooks Shoal Creek.<br><br>
-                                <a class="location" href="https://goo.gl/maps/F2J8MgzssefW5qjs5"
-                                    target="_blank"><br>AUSTIN, TX</a>
+                                    We celebrate the spirit of the Basque’s social bar culture with a curated Spanish
+                                    wine list, amazing craft cocktails and flowing porrones. Enjoy our beautiful patio
+                                    that overlooks Shoal Creek.<br><br>
+                                    <a class="location" href="https://goo.gl/maps/F2J8MgzssefW5qjs5"
+                                        target="_blank"><br>AUSTIN, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1463,16 +1553,18 @@
                                         style="word-spacing: -0.30em;">BABY GREENS</a>
                                 </section>
                                 <p>
-                                    the home of the first fast food salad restaurant. Baby Greens quickly became the destination for fresh and healthy fast food, winning many awards for serving the best salads & dressings in town.<br><br>
-                                <a class="location" href="https://goo.gl/maps/mSAF8VHehVrmEGJa8"
-                                    target="_blank"><br>AUSTIN, TX</a>
+                                    the home of the first fast food salad restaurant. Baby Greens quickly became the
+                                    destination for fresh and healthy fast food, winning many awards for serving the
+                                    best salads & dressings in town.<br><br>
+                                    <a class="location" href="https://goo.gl/maps/mSAF8VHehVrmEGJa8"
+                                        target="_blank"><br>AUSTIN, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1481,16 +1573,18 @@
                                         style="word-spacing: -0.30em;">KESSLER BAKING</a>
                                 </section>
                                 <p>
-                                    We never add preservatives, artificial flavors, or colors. The Kessler Baking Studio offers a wide selection of cookies, brownies, specialty treats, packaged nuts, and confections.<br><br>
-                                <a class="location" href="https://g.page/kesslerbakingstudio?share"
-                                    target="_blank"><br>DALLAS, TX</a>
+                                    We never add preservatives, artificial flavors, or colors. The Kessler Baking Studio
+                                    offers a wide selection of cookies, brownies, specialty treats, packaged nuts, and
+                                    confections.<br><br>
+                                    <a class="location" href="https://g.page/kesslerbakingstudio?share"
+                                        target="_blank"><br>DALLAS, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1499,16 +1593,19 @@
                                         style="word-spacing: -0.30em;">INVASIONS</a>
                                 </section>
                                 <p>
-                                    We are Dallas’ new fast, gourmet restaurant, meaning we offer healthy, fresh, delicious food for a lesser price and a quicker delivery time. We believe in fresh, quality food and strive to find the best local, organic, and delicious ingredients.<br>
-                                <a class="location" href="https://g.page/eatinvasion?share"
-                                    target="_blank"><br>DALLAS, TX</a>
+                                    We are Dallas’ new fast, gourmet restaurant, meaning we offer healthy, fresh,
+                                    delicious food for a lesser price and a quicker delivery time. We believe in fresh,
+                                    quality food and strive to find the best local, organic, and delicious
+                                    ingredients.<br>
+                                    <a class="location" href="https://g.page/eatinvasion?share"
+                                        target="_blank"><br>DALLAS, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1517,16 +1614,17 @@
                                         style="word-spacing: -0.30em;">SMOKEY JOHNS</a>
                                 </section>
                                 <p>
-                                    Down-home eatery specializing in hickory-smoked BBQ, burgers, salads & soul food since 1976.<br><br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/J487DmkkbbQBNKpp8"
-                                    target="_blank"><br>DALLAS, TX</a>
+                                    Down-home eatery specializing in hickory-smoked BBQ, burgers, salads & soul food
+                                    since 1976.<br><br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/J487DmkkbbQBNKpp8"
+                                        target="_blank"><br>DALLAS, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1535,16 +1633,18 @@
                                         style="word-spacing: -0.30em;">KOOKIE HAVEN</a>
                                 </section>
                                 <p>
-                                    "Offering every kind of cookie from butter toffee crunch to oatmeal cranberry, and even vegan options, the bakery is well-known for the “stuffer” — a glorious cookie and cupcake hybrid."-papercitymag.com<br><br>
-                                <a class="location" href="https://g.page/KookieHaven?share"
-                                    target="_blank"><br>DALLAS, TX</a>
+                                    "Offering every kind of cookie from butter toffee crunch to oatmeal cranberry, and
+                                    even vegan options, the bakery is well-known for the “stuffer” — a glorious cookie
+                                    and cupcake hybrid."-papercitymag.com<br><br>
+                                    <a class="location" href="https://g.page/KookieHaven?share"
+                                        target="_blank"><br>DALLAS, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1553,16 +1653,18 @@
                                         style="word-spacing: -0.30em;">ISLAND SPOT</a>
                                 </section>
                                 <p>
-                                    An authentic island restaurant where you can come to taste the flavors of Jamaica and the Caribbean in a fun and vibrant atmosphere. We invite you to enjoy our authentic food. From Jerk chicken to curry shrimp, and fresh squeezed juices...
-                                <a class="location" href="https://goo.gl/maps/8RpLV7d2PtwSD3He7"
-                                    target="_blank"><br>DALLAS, TX</a>
+                                    An authentic island restaurant where you can come to taste the flavors of Jamaica
+                                    and the Caribbean in a fun and vibrant atmosphere. We invite you to enjoy our
+                                    authentic food. From Jerk chicken to curry shrimp, and fresh squeezed juices...
+                                    <a class="location" href="https://goo.gl/maps/8RpLV7d2PtwSD3He7"
+                                        target="_blank"><br>DALLAS, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1571,16 +1673,19 @@
                                         style="word-spacing: -0.30em;">CAKE BAR</a>
                                 </section>
                                 <p>
-                                    Large selection of traditional, southern style made from scratch cake and confections on the spot or take them to go. items sold include 16 different made from scratch cakes, a variety of pound cakes, quick breads, cookies, ice cream and assorted beverages.
-                                <a class="location" href="https://goo.gl/maps/J487DmkkbbQBNKpp8"
-                                    target="_blank"><br>DALLAS, TX</a>
+                                    Large selection of traditional, southern style made from scratch cake and
+                                    confections on the spot or take them to go. items sold include 16 different made
+                                    from scratch cakes, a variety of pound cakes, quick breads, cookies, ice cream and
+                                    assorted beverages.
+                                    <a class="location" href="https://goo.gl/maps/J487DmkkbbQBNKpp8"
+                                        target="_blank"><br>DALLAS, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1589,16 +1694,18 @@
                                         style="word-spacing: -0.30em;">TLC VEGAN</a>
                                 </section>
                                 <p>
-                                    Craft vegan kitchen, expect savory & sweets on the menu, from his famous oyster mushrooms disguised like chicken but always happily mushrooms found on the various TLC pizzas, topped with homemade cashew mozzarella and more...
-                                <a class="location" href="https://goo.gl/maps/bvHA454sMJvBXKbE7"
-                                    target="_blank"><br>DALLAS, TX</a>
+                                    Craft vegan kitchen, expect savory & sweets on the menu, from his famous oyster
+                                    mushrooms disguised like chicken but always happily mushrooms found on the various
+                                    TLC pizzas, topped with homemade cashew mozzarella and more...
+                                    <a class="location" href="https://goo.gl/maps/bvHA454sMJvBXKbE7"
+                                        target="_blank"><br>DALLAS, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1607,16 +1714,18 @@
                                         style="word-spacing: -0.50em; font-size: 2.0vw;">TASTE BAR+KITCHEN</a>
                                 </section>
                                 <p>
-                                    Guests to Taste Bar + Kitchen can expect comfort foods featuring an extensive chicken & waffles menu. Savory & innovative waffle highlights include Cajun Chicken & Waffles, Chicken Fried Lobster & Waffles and General Tso’s Chicken & Waffles.<br>
-                                <a class="location" href="https://goo.gl/maps/ENWvMJtFhwyuo1YMA"
-                                    target="_blank"><br>HOUSTON, TX</a>
+                                    Guests to Taste Bar + Kitchen can expect comfort foods featuring an extensive
+                                    chicken & waffles menu. Savory & innovative waffle highlights include Cajun Chicken
+                                    & Waffles, Chicken Fried Lobster & Waffles and General Tso’s Chicken & Waffles.<br>
+                                    <a class="location" href="https://goo.gl/maps/ENWvMJtFhwyuo1YMA"
+                                        target="_blank"><br>HOUSTON, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1625,16 +1734,19 @@
                                         style="word-spacing: -0.30em;">LUCILLES</a>
                                 </section>
                                 <p>
-                                    Lucille’s is a tribute to a legacy of culinary excellence started almost a century ago. A locally-owned restaurant in the heart of Houston’s Museum District, we specialize in well-refined Southern cuisine with infusions of international techniques and flavors.
-                                <a class="location" href="https://goo.gl/maps/JRTd75XtvtRUXAkP7"
-                                    target="_blank"><br>HOUSTON, TX</a>
+                                    Lucille’s is a tribute to a legacy of culinary excellence started almost a century
+                                    ago. A locally-owned restaurant in the heart of Houston’s Museum District, we
+                                    specialize in well-refined Southern cuisine with infusions of international
+                                    techniques and flavors.
+                                    <a class="location" href="https://goo.gl/maps/JRTd75XtvtRUXAkP7"
+                                        target="_blank"><br>HOUSTON, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1643,16 +1755,17 @@
                                         style="word-spacing: -0.30em;">GLAZED</a>
                                 </section>
                                 <p>
-                                    Creative housemade donuts pair with gourmet coffee at this specialty cafe open around the clock.<br><br><br><br><br>
-                                <a class="location" href="https://g.page/eatglazed?share"
-                                    target="_blank"><br>HOUSTON, TX</a>
+                                    Creative housemade donuts pair with gourmet coffee at this specialty cafe open
+                                    around the clock.<br><br><br><br><br>
+                                    <a class="location" href="https://g.page/eatglazed?share"
+                                        target="_blank"><br>HOUSTON, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1661,34 +1774,40 @@
                                         style="word-spacing: -0.30em; font-size: 2.0vw;">FRENCHY'S KITCHEN</a>
                                 </section>
                                 <p>
-                                    Most popular Creole cuisine restaurants in Houston and surrounding areas. From its humble beginnings, Frenchy's has grown to become the hometown favorite for millions of customers over the years, with a full Creole-style menu of sides...
-                                <a class="location" href="https://goo.gl/maps/gfsJjRhEwX7HhyJy5"
-                                    target="_blank"><br>HOUSTON, TX</a>
+                                    Most popular Creole cuisine restaurants in Houston and surrounding areas. From its
+                                    humble beginnings, Frenchy's has grown to become the hometown favorite for millions
+                                    of customers over the years, with a full Creole-style menu of sides...
+                                    <a class="location" href="https://goo.gl/maps/gfsJjRhEwX7HhyJy5"
+                                        target="_blank"><br>HOUSTON, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="TX box ALL box">
+            <div class="TX box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
                                 <section id="food">
-                                    <a class="title" href="https://www.yelp.com/biz/onion-creek-cafe-houston" target="_blank"
-                                        style="word-spacing: -0.40em; font-size: 2.2vw;">ONION CREEK CAFE</a>
+                                    <a class="title" href="https://www.yelp.com/biz/onion-creek-cafe-houston"
+                                        target="_blank" style="word-spacing: -0.40em; font-size: 2.2vw;">ONION CREEK
+                                        CAFE</a>
                                 </section>
                                 <p>
-                                    "This popular Heights restaurant has been offering its insane breakfast, lunch, dinner, and brunch menus for more than 15 years, tempting diners with options like its 6th Street Migas Verde, Brisket Hash, and Italian Goat pizza"-papercitymag.com<br>
-                                <a class="location" href="https://g.page/onioncreekhouston?share"
-                                    target="_blank"><br>HOUSTON, TX</a>
+                                    "This popular Heights restaurant has been offering its insane breakfast, lunch,
+                                    dinner, and brunch menus for more than 15 years, tempting diners with options like
+                                    its 6th Street Migas Verde, Brisket Hash, and Italian Goat
+                                    pizza"-papercitymag.com<br>
+                                    <a class="location" href="https://g.page/onioncreekhouston?share"
+                                        target="_blank"><br>HOUSTON, TX</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="WA box ALL box">
+            <div class="WA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1697,16 +1816,17 @@
                                         style="word-spacing: -0.30em;">PAM'S KITCHEN</a>
                                 </section>
                                 <p>
-                                    Relaxed Trinidadian-Caribbean eatery serving jerk chicken & curries, plus juices & cocktails.<br><br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/H5hBeMkqtB6kBsbC9"
-                                    target="_blank"><br>SEATTLE, WA</a>
+                                    Relaxed Trinidadian-Caribbean eatery serving jerk chicken & curries, plus juices &
+                                    cocktails.<br><br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/H5hBeMkqtB6kBsbC9"
+                                        target="_blank"><br>SEATTLE, WA</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="WA box ALL box">
+            <div class="WA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1715,16 +1835,18 @@
                                         style="word-spacing: -0.30em;">JERK SHACK</a>
                                 </section>
                                 <p>
-                                    The menu is inspired by Lamont’s Jamaican heritage, with a focus on made-from-scratch cooking using house-ground spices, smoked and fried to perfection.<br><br><br>
-                                <a class="location" href="https://goo.gl/maps/uq3d7Y8K1YCsdGYd8"
-                                    target="_blank"><br>SEATTLE, WA</a>
+                                    The menu is inspired by Lamont’s Jamaican heritage, with a focus on
+                                    made-from-scratch cooking using house-ground spices, smoked and fried to
+                                    perfection.<br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/uq3d7Y8K1YCsdGYd8"
+                                        target="_blank"><br>SEATTLE, WA</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="WA box ALL box">
+            <div class="WA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1733,16 +1855,17 @@
                                         style="word-spacing: -0.30em;">MOJITO</a>
                                 </section>
                                 <p>
-                                    Latin American cooking & cocktails served in a bright little eatery with occasional live music.<br><br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/G4Ec96P9qVC9e2YR9"
-                                    target="_blank"><br>SEATTLE, WA</a>
+                                    Latin American cooking & cocktails served in a bright little eatery with occasional
+                                    live music.<br><br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/G4Ec96P9qVC9e2YR9"
+                                        target="_blank"><br>SEATTLE, WA</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="WA box ALL box">
+            <div class="WA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1751,34 +1874,36 @@
                                         style="word-spacing: -0.30em;">JUNEBABY</a>
                                 </section>
                                 <p>
-                                    Classic Southern fare made with heirloom ingredients is served in a stylish locale with cocktails.<br><br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/5BwX4fHib73rJFD87"
-                                    target="_blank"><br>SEATTLE, WA</a>
+                                    Classic Southern fare made with heirloom ingredients is served in a stylish locale
+                                    with cocktails.<br><br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/5BwX4fHib73rJFD87"
+                                        target="_blank"><br>SEATTLE, WA</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="WA box ALL box">
+            <div class="WA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
                                 <section id="food">
                                     <a class="title" href="https://www.simplysoulfulcafe.com/" target="_blank"
-                                    style="word-spacing: -0.30em;">SIMPLE SOULFUL</a>
+                                        style="word-spacing: -0.30em;">SIMPLE SOULFUL</a>
                                 </section>
                                 <p>
-                                    Pint-sized, family-owned cafe serving up classic soul food dishes & desserts in a convivial setting.<br><br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/t6cL7PtTJcnjSZgeA"
-                                    target="_blank"><br>SEATTLE, WA</a>
+                                    Pint-sized, family-owned cafe serving up classic soul food dishes & desserts in a
+                                    convivial setting.<br><br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/t6cL7PtTJcnjSZgeA"
+                                        target="_blank"><br>SEATTLE, WA</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card_item">
-                <div class="WA box ALL box">
+            <div class="WA box ALL box">
+                <div class="card_item">
                     <div class="card_inner">
                         <div class="card_bottom">
                             <div class="card_info">
@@ -1787,27 +1912,32 @@
                                         style="word-spacing: -0.30em;">COMFORT ZONE</a>
                                 </section>
                                 <p>
-                                    Classic American comfort food in a casual space with live music stage & full bar with happy hour.<br><br><br><br><br>
-                                <a class="location" href="https://goo.gl/maps/o2VRw25CANNd61WT6"
-                                    target="_blank"><br>SEATTLE, WA</a>
+                                    Classic American comfort food in a casual space with live music stage & full bar
+                                    with happy hour.<br><br><br><br><br>
+                                    <a class="location" href="https://goo.gl/maps/o2VRw25CANNd61WT6"
+                                        target="_blank"><br>SEATTLE, WA</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
+        </div>
+
+
 
 </body>
 
 <footer>
-	<ul>
-	  <li><a href="https://tanyaravichandran.com" target="_blank" style="font-size: 1.5vw;">Tanya Ravichandran</a></li>
-	  <li><a href="https://samhithatarra.com" target="_blank" style="font-size: 1.5vw;">Samhitha Tarra</a></li>
-	  <li><a href="mailto:hello@filter-black.com" target="_blank" style="font-size: 1.5vw;">Email</a></li>
-	  <li>
-		<p>👋</p>
-	  </li>
-	</ul>
+    <ul>
+        <li><a href="https://tanyaravichandran.com" target="_blank" style="font-size: 1.5vw;">Tanya Ravichandran</a>
+        </li>
+        <li><a href="https://samhithatarra.com" target="_blank" style="font-size: 1.5vw;">Samhitha Tarra</a></li>
+        <li><a href="mailto:hello@filter-black.com" target="_blank" style="font-size: 1.5vw;">Email</a></li>
+        <li>
+            <p>👋</p>
+        </li>
+    </ul>
 </footer>
 
 </html>

@@ -68,10 +68,12 @@ img {
     display: flex;
     flex-wrap: wrap;
 }
-.cards_wrap .card_item {
+
+.cards_wrap .ALL {
     width: 33%;
     padding: 10px;
 }
+
 .cards_wrap .card_inner {
     border-radius: 25px;
     background:white;
@@ -129,12 +131,12 @@ select{
 }
   
 @media (max-width: 1024px) {
-    .cards_wrap .card_item {
+    .cards_wrap .ALL {
       width: 33.3%;
     }
 }
 @media (max-width: 768px) {
-    .cards_wrap .card_item {
+    .cards_wrap .ALL {
       width: 33.3%;
     }
 }
@@ -142,7 +144,7 @@ select{
     .cards_wrap .card_top {
       height: auto;
     }
-    .cards_wrap .card_item {
+    .cards_wrap .ALL {
       width: 100%;
     }
     .PAGE_TITLE{
