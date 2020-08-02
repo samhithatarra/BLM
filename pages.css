@@ -161,10 +161,14 @@ select{
         font-size: 3vw;
     }
 
+
+}
+
+@media (max-width:450px){
     footer ul {
         display: inline-grid;
         grid-auto-flow: column;
-        font-size: 100px;
+        font-size: 18px;
     }
 }
 
