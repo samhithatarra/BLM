@@ -164,12 +164,7 @@ select{
 
 }
 
-@media (max-width:450px){
-    footer ul {
 
-        font-size: 14px;
-    }
-}
 
 /*FASH*/
 #fash a {
@@ -275,6 +270,8 @@ footer ul {
 @media (min-width: 500px) {
     footer ul {
       grid-auto-flow: column;
+      font-size: 15px;
+
     }
   }
   
