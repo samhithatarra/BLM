@@ -164,6 +164,7 @@ select{
     footer ul {
         display: inline-grid;
         grid-auto-flow: column;
+        font-size: 100px;
     }
 }
 
