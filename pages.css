@@ -256,6 +256,7 @@ select{
     font-family: 'cornerstoneregular';
     text-align: center;
 }
+
 footer ul {
     display: inline-grid;
     grid-auto-flow: column;
@@ -265,8 +266,6 @@ footer ul {
     margin: auto;
     color:grey;
   }
-
-  
 @media (max-width: 528px) {
     footer ul {
       grid-auto-flow: column;
